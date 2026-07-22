@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #1a2027;
+  color: #e6edf0;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+.gallery-swiper {
+  padding-bottom: 3.25rem;
+}
+
+.gallery-swiper .swiper-pagination-bullet {
+  background: #8fb7c9;
+  opacity: 0.45;
+}
+
+.gallery-swiper .swiper-pagination-bullet-active {
+  background: #18b1fb;
+  opacity: 1;
+}
