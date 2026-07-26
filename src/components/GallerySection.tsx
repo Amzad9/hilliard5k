@@ -12,28 +12,28 @@ import "swiper/css/pagination";
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1502904550040-7534597429ae?auto=format&fit=crop&w=1200&q=80",
-    alt: "Columbus Turkey Trot gallery image",
+    src: "https://images.unsplash.com/photo-1564410267841-915d8e4d71ea?auto=format&fit=crop&w=1200&q=80",
+    alt: "Hilliard Family Fun Run — 5K group run on the course",
   },
   {
-    src: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1200&q=80",
-    alt: "Columbus Turkey Trot gallery image",
+    src: "https://images.pexels.com/photos/2526878/pexels-photo-2526878.jpeg?auto=compress&cs=tinysrgb&w=1200&fit=crop&h=800",
+    alt: "Hilliard Family Fun Run — trail running through the park",
   },
   {
-    src: "https://images.unsplash.com/photo-1448387473223-5c37445527e7?auto=format&fit=crop&w=1200&q=80",
-    alt: "Columbus Turkey Trot gallery image",
+    src: "https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?auto=format&fit=crop&w=1200&q=80",
+    alt: "Hilliard Family Fun Run — crowd at the race start line",
   },
   {
-    src: "https://images.unsplash.com/photo-1518604666860-9ed391f76460?auto=format&fit=crop&w=1200&q=80",
-    alt: "Columbus Turkey Trot gallery image",
+    src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80",
+    alt: "Hilliard Family Fun Run — kids and families fun run",
   },
   {
-    src: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1200&q=80",
-    alt: "Columbus Turkey Trot gallery image",
+    src: "https://images.unsplash.com/photo-1606214174585-fe31582dc6ee?auto=format&fit=crop&w=1200&q=80",
+    alt: "Hilliard Family Fun Run — finisher medals with ribbon",
   },
   {
-    src: "https://images.unsplash.com/photo-1497294815431-9365093b7331?auto=format&fit=crop&w=1200&q=80",
-    alt: "Columbus Turkey Trot gallery image",
+    src: "https://images.pexels.com/photos/2526875/pexels-photo-2526875.jpeg?auto=compress&cs=tinysrgb&w=1200&fit=crop&h=800",
+    alt: "Hilliard Family Fun Run — family running together in the park",
   },
 ];
 
@@ -59,11 +59,11 @@ export default function GallerySection({
               Event Gallery
             </p>
             <h2 className="mt-3 text-3xl font-black leading-[0.95] text-[#f0f7f8] sm:text-4xl lg:text-5xl">
-              Columbus Turkey Trot Highlights
+              Hilliard Family Fun Run Highlights
             </h2>
             <p className="mt-4 text-base leading-7 text-[#c9d4da] sm:text-lg sm:leading-8">
-              Explore race-day images featuring runners, families, and Thanksgiving morning
-              community spirit.
+              Race-day moments featuring runners, walkers, families, and the community spirit
+              that makes the Hilliard Family Fun Run a Central Ohio tradition.
             </p>
           </div>
         ) : null}

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Users, Heart, Trophy } from "lucide-react";
+import { Heart, Trophy, Users } from "lucide-react";
 
 import PageShell from "../../components/PageShell";
 
@@ -12,18 +12,18 @@ export const metadata: Metadata = {
 
 const values = [
   {
-    title: "Everyone Welcome",
-    body: "From avid runners to first-timers, walkers, seniors, and strollers — there is something for everyone both young and old.",
+    title: "Built for Everyone",
+    body: "Competitive runners, casual walkers, seniors, strollers, and first-timers are all equally welcome. No experience needed — just a willingness to show up and move.",
     icon: <Users className="h-5 w-5" strokeWidth={2.2} />,
   },
   {
-    title: "Give Back",
-    body: "Proceeds from the race benefit a local Central Ohio non-profit organization, making every step count.",
+    title: "Run With Purpose",
+    body: "Race proceeds fund a local Central Ohio non-profit organization. Every step you take — and every dollar you spend registering — goes back into the community you live in.",
     icon: <Heart className="h-5 w-5" strokeWidth={2.2} />,
   },
   {
-    title: "Celebrate Every Finish",
-    body: "Every finisher receives a custom finish medal with ribbon. Your effort deserves to be recognized.",
+    title: "Every Finish Counts",
+    body: "A custom finisher medal with ribbon is waiting at the end of your race. Whether you ran 5K or walked one mile, you earned it — and we want to celebrate it with you.",
     icon: <Trophy className="h-5 w-5" strokeWidth={2.2} />,
   },
 ];
@@ -36,15 +36,17 @@ export default function AboutPage() {
         eyebrow: "About the Race",
         title: (
           <>
-            The Hilliard Family Fun Run:<br />
-            A Morning for Everyone
+            A Race That Welcomes
+            <br />
+            Everyone
           </>
         ),
         subtitle:
-          "Attention Central Ohio running and walking enthusiasts. Join hundreds of like-minded individuals lacing up for a morning of fun and exercise.",
-        imageUrl: "/finishline.jpg",
+          "The Hilliard Family Fun Run is a Central Ohio community event where hundreds of runners and walkers gather each year for a morning of fitness, fun, and giving back.",
+        imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1600&q=80",
       }}
     >
+      {/* Mission */}
       <section id="mission" className="px-4 py-10 sm:px-8 sm:py-14">
         <div className="container mx-auto grid gap-6 lg:grid-cols-12">
           <div className="lg:col-span-7">
@@ -52,14 +54,13 @@ export default function AboutPage() {
               Our Mission
             </h2>
             <p className="mt-4 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
-              The Hilliard Family Fun Run brings together Central Ohio runners and walkers of all
-              experience levels for a morning of fun and exercise. Whether you&apos;re an avid runner
-              or someone who just wants to get started, we have something for everyone — young and
-              old, including seniors and first-timers.
+              The Hilliard Family Fun Run exists to bring people together — not just on race day,
+              but in the spirit of health, community, and shared purpose. We believe fitness should
+              be accessible and enjoyable for everyone, regardless of age, pace, or experience level.
             </p>
             <p className="mt-3 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
-              Best of all, proceeds benefit a local non-profit organization, making every mile you
-              run a step toward a better community.
+              Every registration supports a local non-profit, meaning your participation creates
+              a ripple of impact that stretches far beyond the finish line.
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -83,8 +84,8 @@ export default function AboutPage() {
           <div className="lg:col-span-5">
             <div className="relative min-h-[280px] overflow-hidden rounded-3xl border border-white/15 bg-white/5 shadow-[0_18px_44px_rgba(0,0,0,0.30)] sm:min-h-[360px]">
               <Image
-                src="/event.jpg"
-                alt="Hilliard Family Fun Run race day"
+                src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1400&q=80"
+                alt="Hilliard Family Fun Run — race morning energy"
                 fill
                 className="object-cover"
               />
@@ -94,10 +95,11 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Values */}
       <section className="bg-[#1e252d] px-4 py-10 sm:px-8 sm:py-14">
         <div className="container mx-auto">
           <h2 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-4xl">
-            What We Stand For
+            What This Race Stands For
           </h2>
           <div className="mt-6 grid gap-5 md:grid-cols-3">
             {values.map((item) => (
@@ -116,48 +118,52 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-[#1e252d] px-4 py-4 sm:px-8">
+      {/* Event Info sections */}
+      <section className="bg-[#1e252d] px-4 py-6 sm:px-8">
         <div className="container mx-auto">
-          <h2 className="text-2xl font-black uppercase tracking-tight text-[#f3d27d]">The Event</h2>
+          <h2 className="text-2xl font-black uppercase tracking-tight text-[#f3d27d]">The Setting</h2>
           <div className="mt-4">
             <p className="text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
-              The Hilliard Family Fun Run is an annual event that welcomes runners and walkers of
-              all ages and experience levels. Staged at the Hilliard Sports Complex, directly across
-              from the new Wellness Fitness Center, the event features two distances to suit every
-              participant — a timed 5K and a casual 1-Mile Fun Run.
+              Staged at the Hilliard Sports Complex — located directly across from the new
+              Wellness Fitness Center at 5001 Scioto Darby Rd — the race uses the beautiful
+              paved trail system that winds through the complex and surrounding area. Free
+              parking is available on site, and the venue offers easy access for the whole family.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#1e252d] px-4 py-4 sm:px-8">
+      <section className="bg-[#1e252d] px-4 py-6 sm:px-8">
         <div className="container mx-auto">
-          <h4 className="text-2xl font-black uppercase tracking-tight text-[#f3d27d]">For Every Participant</h4>
+          <h4 className="text-2xl font-black uppercase tracking-tight text-[#f3d27d]">Your Kind of Race</h4>
           <div className="mt-4">
             <p className="text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
-              Participants are encouraged to come out, meet new friends, and most importantly have
-              fun. Whether you&apos;re challenging yourself physically or simply enjoying the
-              community atmosphere, the event offers something for everyone. Walkers, seniors,
-              strollers, and first-timers are all welcome.
+              Two distances keep the event accessible for all fitness levels. The 5K is a
+              chip-timed 3.1-mile course through the complex&apos;s paved trails — open to runners
+              and walkers of all speeds. The 1-Mile Fun Run follows the newer trails nearby and
+              is designed specifically for families, strollers, seniors, and anyone who wants a
+              casual, enjoyable morning on their feet.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#1e252d] px-4 py-4 pb-10 sm:px-8">
+      <section className="bg-[#1e252d] px-4 py-6 pb-10 sm:px-8">
         <div className="container mx-auto">
-          <h2 className="text-2xl font-black uppercase tracking-tight text-[#f3d27d]">Community Spirit</h2>
+          <h2 className="text-2xl font-black uppercase tracking-tight text-[#f3d27d]">Come Out, Give Back</h2>
           <div className="mt-4">
             <p className="text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
-              This event is open to all, making it easy to bring your family and friends along.
-              It&apos;s an opportunity to create lasting memories and embrace the spirit of community
-              that makes the Hilliard Family Fun Run so special — and to give back to a local
-              non-profit organization in the process.
+              At the end of race day, what lingers is more than a medal or a finish time — it&apos;s
+              the feeling of being part of a community that shows up for each other. Bring your
+              family, bring a friend, and make it a morning you&apos;ll want to repeat year after year.
+              Proceeds support a local Central Ohio non-profit, so your participation has a
+              positive impact that outlasts the race.
             </p>
           </div>
         </div>
       </section>
 
+      {/* CTA + Image */}
       <section className="px-4 pb-12 pt-10 sm:px-8 sm:pb-16 sm:pt-14">
         <div className="container mx-auto">
           <div className="grid gap-6 lg:grid-cols-12 lg:items-stretch">
@@ -168,7 +174,8 @@ export default function AboutPage() {
                   Let&apos;s make race day unforgettable.
                 </h2>
                 <p className="mt-3 max-w-3xl text-base leading-7 text-white/85 sm:text-lg sm:leading-8">
-                  Questions about registration, packet pickup, or the race course? We&apos;re here to help.
+                  Questions about registration, packet pickup, the course, or anything else?
+                  We&apos;re happy to help before race morning.
                 </p>
                 <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                   <Link
@@ -189,7 +196,7 @@ export default function AboutPage() {
             <div className="lg:col-span-7">
               <div className="relative h-full min-h-[220px] overflow-hidden rounded-[24px] border border-white/15 bg-black/40 shadow-[0_18px_44px_rgba(0,0,0,0.25)] sm:min-h-[280px] lg:min-h-0">
                 <Image
-                  src="/photo.png"
+                  src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?auto=format&fit=crop&w=1400&q=80"
                   alt="Hilliard Family Fun Run participants"
                   fill
                   className="object-cover"

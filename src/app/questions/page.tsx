@@ -7,37 +7,49 @@ import { siteContact } from "../../components/siteConfig";
 
 export const metadata: Metadata = {
   title: "Questions | Hilliard Family Fun Run 5K",
-  description: "Get answers about registration, packet pickup, and race-day questions for the Hilliard Family Fun Run.",
+  description: "Answers to common questions about the Hilliard Family Fun Run — registration, packet pickup, race day, and more.",
 };
 
 const faq = [
   {
-    question: "Can I register online?",
-    answer: "Yes. Registration is available at www.ultrafit-usa.com/hilliard5k. Click any Register button on this site to go directly to the registration page.",
+    question: "How do I register?",
+    answer: "Registration is available online at www.ultrafit-usa.com/hilliard5k. Click any &apos;Register Now&apos; button on this site to go directly to the registration page.",
   },
   {
-    question: "What events are available?",
-    answer: "We offer a timed 5K run/walk (9:00 AM) and a 1-Mile Family Fun Run (approx. 9:10 AM). Both start and finish at the Hilliard Sports Complex.",
+    question: "What race distances are available?",
+    answer: "We offer a chip-timed 5K (starting at 9:00 AM) and a 1-Mile Family Fun Run (starting approx. 9:10 AM). Both start and finish at the Hilliard Sports Complex.",
   },
   {
     question: "What are the entry fees?",
-    answer: "The 5K is $45 and the 1-Mile Fun Run is $40. Prices increase after August 1st, so register early.",
+    answer: "The 5K is $45 and the 1-Mile Fun Run is $40. Prices increase after August 1st — register early to lock in the lower rate.",
   },
   {
     question: "Who can participate in the 1-Mile Fun Run?",
-    answer: "The 1-Mile Fun Run is for anyone who enjoys a more casual distance — walkers, seniors, strollers, and families are all welcome.",
+    answer: "Everyone! The 1-Mile Fun Run is designed for walkers, seniors, strollers, families, and first-timers. There is no pressure and no minimum pace — come out and enjoy it.",
   },
   {
     question: "Can someone else pick up my packet?",
-    answer: "Yes. A friend or family member may pick up your race packet if you cannot attend. See our Packet Pickup page for full proxy details.",
+    answer: "Yes. A friend or family member may pick up your race packet on your behalf. Share your full name and registered event with them and they can collect it at pickup.",
   },
   {
     question: "Where will race results be posted?",
-    answer: "All finish times will be recorded and posted online at www.ultrafitusa.com following the race.",
+    answer: "All 5K finish times are recorded and posted online at www.ultrafitusa.com after the event. Check there after race day for your official time.",
   },
   {
-    question: "Where is parking?",
-    answer: "There is plenty of parking at and around the Hilliard Sports Complex. Please exercise caution when you arrive.",
+    question: "Where do I park?",
+    answer: "There is free parking at and around the Hilliard Sports Complex. Arrive early to get a good spot, and please exercise caution in the lot when you arrive.",
+  },
+  {
+    question: "What do I receive when I register?",
+    answer: "All registered participants receive a colorful race shirt with the official logo. Every finisher receives a custom medal with ribbon. Finish line food and beverages are also provided.",
+  },
+  {
+    question: "Is the course accessible for strollers?",
+    answer: "Yes. The 1-Mile Fun Run uses the newer paved trails surrounding the sports complex and is designed to be accessible for strollers, seniors, and participants of all mobility levels.",
+  },
+  {
+    question: "Are entries refundable?",
+    answer: "Race entries are non-refundable. For safety and accurate timing, unofficial bib transfers are not permitted. Contact us with any questions.",
   },
 ];
 
@@ -47,11 +59,12 @@ export default function QuestionsPage() {
       activeLabel="Questions"
       hero={{
         eyebrow: "Questions",
-        title: "We\u2019re Here To Help",
-        subtitle: "Need help with registration, packet pickup, or race-day details? Reach out to our race hotline.",
-        imageUrl: "/question.jpg",
+        title: "We\u2019re Happy To Help",
+        subtitle: "Find answers to common questions below — or reach us directly by phone or email. We&apos;re here before, during, and after race day.",
+        imageUrl: "https://images.unsplash.com/photo-1502904550040-7534597429ae?auto=format&fit=crop&w=1600&q=80",
       }}
     >
+      {/* Contact methods */}
       <section className="px-4 py-10 sm:px-8 sm:py-14">
         <div className="container mx-auto grid gap-6 md:grid-cols-3">
           <a
@@ -61,7 +74,9 @@ export default function QuestionsPage() {
             <Phone className="h-6 w-6 text-[#f3d27d]" strokeWidth={2.2} />
             <h2 className="mt-4 text-xl font-black uppercase text-white">Race Hotline</h2>
             <p className="mt-2 text-white/85">{siteContact.phone}</p>
-            <p className="mt-1 text-sm text-white/60">For any questions, please call us directly.</p>
+            <p className="mt-1 text-sm text-white/60">
+              Call us for any race question — registration, packet pickup, course info, or general help.
+            </p>
           </a>
           <a
             href={`mailto:${siteContact.emailShowroom}`}
@@ -70,6 +85,9 @@ export default function QuestionsPage() {
             <Mail className="h-6 w-6 text-[#f3d27d]" strokeWidth={2.2} />
             <h2 className="mt-4 text-xl font-black uppercase text-white">Email Us</h2>
             <p className="mt-2 text-white/85">{siteContact.emailShowroom}</p>
+            <p className="mt-1 text-sm text-white/60">
+              Send us an email any time — we typically respond within one business day.
+            </p>
           </a>
           <Link
             href="/event-details"
@@ -77,14 +95,25 @@ export default function QuestionsPage() {
           >
             <MessageCircle className="h-6 w-6 text-[#f3d27d]" strokeWidth={2.2} />
             <h2 className="mt-4 text-xl font-black uppercase text-white">Event Info</h2>
-            <p className="mt-2 text-white/85">See race distances, start times, course maps, and registration links.</p>
+            <p className="mt-2 text-white/85">
+              See race distances, start times, course maps, pricing, and registration links.
+            </p>
           </Link>
         </div>
       </section>
 
+      {/* FAQ */}
       <section className="px-4 pb-12 sm:px-8 sm:pb-16">
         <div className="container mx-auto rounded-[24px] border border-white/15 bg-[#1e252d] p-6 shadow-[0_18px_44px_rgba(0,0,0,0.35)] sm:p-8">
-          <h3 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-4xl">FAQ</h3>
+          <h3 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-4xl">
+            Frequently Asked Questions
+          </h3>
+          <p className="mt-3 text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
+            Can&apos;t find your answer below? Call us at{" "}
+            <a href={siteContact.phoneHref} className="font-semibold text-[#f3d27d] hover:brightness-110 transition">
+              {siteContact.phone}
+            </a>.
+          </p>
           <div className="mt-6 grid gap-4">
             {faq.map((item) => (
               <article key={item.question} className="rounded-2xl border border-white/15 bg-white/5 p-5">

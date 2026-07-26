@@ -10,6 +10,10 @@ const nextConfig: NextConfig = {
         hostname: "images.unsplash.com",
       },
       {
+        protocol: "https",
+        hostname: "images.pexels.com",
+      },
+      {
        protocol: 'https',
        hostname: "https://scontent.fdel65-3.fna.fbcdn.net",
       },
