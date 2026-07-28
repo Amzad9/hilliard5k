@@ -166,6 +166,13 @@ export default function Home() {
                     gets a colorful race shirt. Every finisher takes home a custom medal with ribbon.
                     And fresh finish line food and beverages will be waiting the moment you cross.
                   </p>
+                  <p className="mt-4 max-w-5xl text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
+  Enjoy a professionally organised race experience with clearly marked routes, on-course hydration stations, enthusiastic volunteers, and accurate chip timing to help you perform your best.
+</p>
+
+<p className="mt-4 max-w-5xl text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
+  Whether you're aiming for a personal best, running alongside friends, or taking on your very first marathon, you'll be part of an inspiring community that celebrates every runner from the starting line to the finish.
+</p>
                 </div>
 
                 <div className="relative overflow-hidden rounded-3xl border border-white/15 bg-[#1e252d] shadow-[0_18px_44px_rgba(0,0,0,0.25)]">
