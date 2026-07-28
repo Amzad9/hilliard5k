@@ -43,7 +43,7 @@ export default function MapsPage() {
         ),
         subtitle:
           "The Hilliard Sports Complex is easy to reach and has plenty of parking. These notes should make race morning arrival simple.",
-        imageUrl: "/new-image/race-park-crowd.png",
+        imageUrl: "/new-image/race-road-pack.png",
       }}
     >
       <section className="px-4 py-10 sm:px-8 sm:py-14">
