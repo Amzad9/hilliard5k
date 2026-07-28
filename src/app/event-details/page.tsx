@@ -6,7 +6,7 @@ import PageShell from "../../components/PageShell";
 
 export const metadata: Metadata = {
   title: "Event Details | Hilliard Family Fun Run 5K",
-  description: "Race details for the Hilliard Family Fun Run — 5K and 1-Mile Fun Run at Hilliard Sports Complex.",
+  description: "Race details for the Hilliard Family Fun Run — a two-distance event at Hilliard Sports Complex built for runners, walkers, and families.",
 };
 
 const distances = [
@@ -14,40 +14,40 @@ const distances = [
     title: "5K Race",
     miles: "3.1 miles",
     startTime: "9:00 AM",
-    body: "A chip-timed 5K on the fully paved trail system that winds through the Hilliard Sports Complex. Open to runners and walkers of all paces. Results posted at ultrafitusa.com after the event.",
+    body: "A timed 5K on the paved trail network at Hilliard Sports Complex. It gives runners and walkers a steady, well-marked route with a clean finish.",
   },
   {
     title: "1-Mile Family Fun Run",
     miles: "1 mile",
     startTime: "Approx. 9:10 AM",
-    body: "A relaxed, non-competitive one-mile loop on the newer trails surrounding the complex. Designed for families, walkers, seniors, strollers, and first-timers — all are welcome.",
+    body: "A casual one-mile option on the newer trails around the complex, ideal for families, walkers, seniors, strollers, and first-time participants.",
   },
 ];
 
 const eventFlow = [
   {
-    title: "Park & Arrive",
-    body: "Free parking is available at the Hilliard Sports Complex. Arrive early — gates fill up fast. Follow on-site signage and volunteers for a smooth entry.",
+    title: "Park & Settle In",
+    body: "Free parking is available on site, and arriving a little early makes race morning much easier. Volunteers and signs will help guide you to the right area.",
     icon: <Flag className="h-4 w-4" />,
   },
   {
-    title: "On-Course Support",
-    body: "Volunteers are stationed throughout both courses. They&apos;ll guide you, cheer you on, and point you in the right direction at every turn.",
+    title: "Course Support",
+    body: "Volunteers are stationed throughout both courses. They&apos;ll guide you, cheer you on, and keep the route easy to follow.",
     icon: <Waves className="h-4 w-4" />,
   },
   {
-    title: "Finish Line Celebration",
-    body: "Cross the finish line to collect your custom finisher medal with ribbon. Finish line food and beverages are ready and waiting for you.",
+    title: "Finish Line Moment",
+    body: "When you finish, you will be greeted with a custom medal, refreshments, and a well-earned moment to celebrate.",
     icon: <Trophy className="h-4 w-4" />,
   },
 ];
 
 const raceDayGuidelines = [
-  "Runners and walkers of all ages and experience levels are welcome.",
-  "Follow event volunteers and posted race-day signage at all times.",
-  "Strollers and seniors are welcome on the 1-Mile Fun Run course.",
-  "Exercise caution when entering and exiting the parking area.",
-  "Only the registered runner may race with their assigned bib.",
+  "Everyone is welcome — from experienced runners to first-time walkers.",
+  "Please follow volunteers and course signage so the event stays safe and smooth for everyone.",
+  "The 1-Mile Fun Run is a great fit for strollers, seniors, and anyone moving at a more relaxed pace.",
+  "Please move carefully in the parking area and watch for vehicles and pedestrians around you.",
+  "Bibs are tied to the registered runner and should not be transferred.",
 ];
 
 export default function EventDetailsPage() {
@@ -57,15 +57,15 @@ export default function EventDetailsPage() {
       hero={{
         eyebrow: "Event Details",
         title: "Pick Your Distance",
-        subtitle: "Two courses. One great venue. Whether you're racing the clock or racing for fun — there's a perfect option for you.",
-        imageUrl: "https://images.unsplash.com/photo-1616279969856-759f316a5ac1?auto=format&fit=crop&w=1600&q=80",
+        subtitle: "Two courses make it easy to choose the kind of race morning you want — fast and focused, or relaxed and family-friendly.",
+        imageUrl: "/new-image/race-park-crowd.png",
       }}
     >
       {/* Distance cards */}
       <section className="px-4 py-10 sm:px-8 sm:py-14">
         <div className="container mx-auto rounded-[24px] border border-white/15 bg-white/5 p-6 shadow-[0_18px_44px_rgba(0,0,0,0.25)] sm:p-8">
           <p className="text-base uppercase tracking-[0.08em] text-white/90 sm:text-xl">
-            Start &amp; finish — Hilliard Sports Complex (directly across from the Wellness Fitness Center)
+            Start and finish are both located at the Hilliard Sports Complex across from the Wellness Fitness Center.
           </p>
 
           <div className="mt-5 grid gap-4 md:grid-cols-2">
@@ -103,14 +103,14 @@ export default function EventDetailsPage() {
       <section className="px-4 pb-12 sm:px-8 sm:pb-12">
         <div className="container mx-auto rounded-[24px] border border-white/15 bg-[#1e252d] p-6 shadow-[0_18px_44px_rgba(0,0,0,0.35)] sm:p-8">
           <h3 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-4xl">
-            Race At A Glance
+            Race Snapshot
           </h3>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             <div className="rounded-2xl border border-white/15 bg-white/5 p-4">
               <p className="flex items-center gap-2 text-sm font-black uppercase tracking-wider text-white/85">
                 <CalendarDays className="h-4 w-4" /> Date
               </p>
-              <p className="mt-2 text-lg text-white">Summer / Fall 2026 (TBA)</p>
+              <p className="mt-2 text-lg text-white">2026 race date to be announced</p>
             </div>
             <div className="rounded-2xl border border-white/15 bg-white/5 p-4">
               <p className="flex items-center gap-2 text-sm font-black uppercase tracking-wider text-white/85">
@@ -122,7 +122,7 @@ export default function EventDetailsPage() {
               <p className="flex items-center gap-2 text-sm font-black uppercase tracking-wider text-white/85">
                 <Trophy className="h-4 w-4" /> Entry Fee
               </p>
-              <p className="mt-2 text-lg text-white">5K $45 · Fun Run $40 — prices increase August 1st</p>
+              <p className="mt-2 text-lg text-white">5K entry is $45 and the 1-Mile Fun Run is $40; prices increase after August 1st.</p>
             </div>
           </div>
 
@@ -133,7 +133,7 @@ export default function EventDetailsPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-[#f7d96f] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:text-base"
             >
-              Click Here To Register
+              Register Now
               <ArrowRight className="h-4 w-4" strokeWidth={2.6} />
             </Link>
           </div>
@@ -144,10 +144,10 @@ export default function EventDetailsPage() {
       <section className="bg-[#1e252d] px-4 py-10 sm:px-8 sm:py-8">
         <div className="container mx-auto">
           <h3 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-4xl">
-            How Race Morning Works
+            Race Morning Flow
           </h3>
           <p className="mt-3 max-w-2xl text-base leading-7 text-white/80 sm:text-lg sm:leading-8">
-            From parking to podium, here&apos;s what to expect on race day at the Hilliard Sports Complex.
+            From parking to the finish line, here is what to expect on race day at the Hilliard Sports Complex.
           </p>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             {eventFlow.map((item) => (
@@ -172,16 +172,13 @@ export default function EventDetailsPage() {
         <div className="container mx-auto grid gap-6 lg:grid-cols-12">
           <div className="rounded-[24px] border border-white/15 bg-white/5 p-6 shadow-[0_18px_44px_rgba(0,0,0,0.25)] sm:p-8 lg:col-span-7">
             <h3 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-4xl">
-              The Course
+              Course Overview
             </h3>
             <p className="mt-4 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
-              Both events run on the fully paved trail system winding through the Hilliard Sports
-              Complex and surrounding area — smooth, accessible, and well-marked.
+              Both routes use the paved trail network around the complex, giving you a smooth, well-marked path from start to finish.
             </p>
             <p className="mt-3 text-base leading-7 text-white/85 sm:text-lg sm:leading-8">
-              The 5K covers 3.1 miles of paved trail. The 1-Mile Fun Run uses the newer trails
-              that loop around the sports complex — flat, accessible, and perfect for strollers,
-              seniors, and casual walkers going at their own pace.
+              The 5K covers the full 3.1-mile course, while the 1-Mile Fun Run uses the newer loop around the sports complex. Both routes are paved and easy to follow.
             </p>
             <div className="mt-5">
               <Link
@@ -194,7 +191,7 @@ export default function EventDetailsPage() {
           </div>
 
           <div className="rounded-[24px] border border-white/15 bg-[#1e252d] p-6 shadow-[0_18px_44px_rgba(0,0,0,0.35)] sm:p-8 lg:col-span-5">
-            <h3 className="text-2xl font-black uppercase tracking-tight text-white">Rules &amp; Safety</h3>
+            <h3 className="text-2xl font-black uppercase tracking-tight text-white">Rules &amp; Courtesy</h3>
             <ul className="mt-4 space-y-3">
               {raceDayGuidelines.map((rule) => (
                 <li
@@ -207,7 +204,7 @@ export default function EventDetailsPage() {
             </ul>
             <p className="mt-5 flex items-center gap-2 text-sm font-semibold text-white/85">
               <ShieldCheck className="h-4 w-4 text-[#f3d27d]" />
-              Follow volunteer direction and official signage throughout race morning.
+              Stay aware of volunteers, signage, and nearby participants throughout race morning.
             </p>
           </div>
         </div>

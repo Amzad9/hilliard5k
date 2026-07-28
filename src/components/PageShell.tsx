@@ -29,7 +29,7 @@ export default function PageShell({ activeLabel, hero, children }: PageShellProp
         {hero ? (
           <section
             className={[
-              "relative overflow-hidden px-4 pb-12 pt-10 sm:px-8 sm:pb-16 sm:pt-16",
+              "relative overflow-hidden px-4 pb-12 pt-18 sm:px-8 sm:pb-16 sm:pt-44 mt-12",
               hero.videoUrl ? "bg-[#000000]" : hero.imageUrl ? "bg-cover bg-center" : "bg-[#000000]",
             ].join(" ")}
             style={

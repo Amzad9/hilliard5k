@@ -1,45 +1,45 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BadgeCheck, Clock3, MapPin, ShieldCheck, Timer, Zap } from "lucide-react";
+import { BadgeCheck, MapPin, ShieldCheck, Timer } from "lucide-react";
 
 import PageShell from "../../components/PageShell";
 import { siteContact } from "../../components/siteConfig";
 
 export const metadata: Metadata = {
   title: "Race Day Guide | Hilliard Family Fun Run 5K",
-  description: "Everything you need to know for a confident race morning at the Hilliard Family Fun Run — parking, start times, course tips, and more.",
+  description: "A practical race morning guide for parking, timing, course notes, and the finish line flow.",
 };
 
 const tips = [
   {
     title: "When should I arrive?",
-    body: "Plan to arrive at least 30 minutes before your start time. This gives you plenty of time to park, warm up, find your start area, and get relaxed before the gun goes off.",
+    body: "Plan on arriving at least 30 minutes early so you can park, warm up, and settle in without rushing.",
     icon: <Timer className="h-5 w-5" strokeWidth={2.2} />,
   },
   {
     title: "Where do I park?",
-    body: "There is plenty of free parking within the Hilliard Sports Complex and surrounding areas. Follow on-site signage and volunteer direction for a safe arrival. Exercise caution in the lot.",
+    body: "Free parking is available near the venue. Follow signs and volunteers as you pull in, and keep an eye out for other participants.",
     icon: <MapPin className="h-5 w-5" strokeWidth={2.2} />,
   },
   {
     title: "What should I bring?",
-    body: "Bring your race bib (pinned to your shirt), comfortable running or walking attire appropriate for the weather, and your energy. Hydration is available on the course.",
+    body: "Bring your bib, comfortable gear for the weather, and the energy you want to bring to race morning. Water support will be on course.",
     icon: <BadgeCheck className="h-5 w-5" strokeWidth={2.2} />,
   },
   {
     title: "Is there on-course support?",
-    body: "Yes — trained volunteers are stationed throughout the course to guide participants, answer questions, and cheer you on. Follow event signage at all intersections.",
+    body: "Yes — volunteers will be posted throughout the course to keep participants moving in the right direction and to offer support where needed.",
     icon: <ShieldCheck className="h-5 w-5" strokeWidth={2.2} />,
   },
 ];
 
 const timeline = [
-  { time: "8:00 AM", label: "Parking & Arrival", detail: "Gates open. Find your parking spot and head to the start area." },
-  { time: "8:30 AM", label: "Packet Pickup Closes", detail: "Race-morning packet pickup closes. Collect your bib early." },
-  { time: "8:45 AM", label: "Warm-Up Time", detail: "Head to the start line. Do your warm-up stretches and find your pace group." },
-  { time: "9:00 AM", label: "5K Start", detail: "The 5K run and walk begins on the paved trails of the Hilliard Sports Complex." },
-  { time: "9:10 AM", label: "1-Mile Fun Run Start", detail: "Approx. start time. Walkers, seniors, strollers, and families take the trail." },
-  { time: "After Finish", label: "Celebration", detail: "Collect your custom finisher medal and enjoy finish line food and beverage." },
+  { time: "8:00 AM", label: "Arrival & Parking", detail: "Gates open and the venue starts welcoming early arrivals." },
+  { time: "8:30 AM", label: "Pickup Window Ends", detail: "Make sure your bib is in hand before this time if you are picking up on race morning." },
+  { time: "8:45 AM", label: "Warm-Up", detail: "Head toward the start area, stretch, and choose your pace group." },
+  { time: "9:00 AM", label: "5K Begins", detail: "The timed 5K gets underway on the paved trails." },
+  { time: "Approx. 9:10 AM", label: "1-Mile Fun Run Begins", detail: "Walkers, seniors, strollers, and families head out next." },
+  { time: "After The Finish", label: "Finish Line Celebration", detail: "Grab your medal, then enjoy food and drinks at the finish line." },
 ];
 
 export default function RaceDayGuidePage() {
@@ -57,7 +57,7 @@ export default function RaceDayGuidePage() {
         ),
         subtitle:
           "Your complete race morning playbook — from where to park to crossing the finish line at Hilliard Sports Complex.",
-        imageUrl: "https://images.unsplash.com/photo-1616279969856-759f316a5ac1?auto=format&fit=crop&w=1600&q=80",
+        imageUrl: "/new-image/race-park-crowd.png",
       }}
     >
       {/* Race Day Timeline */}
@@ -67,8 +67,7 @@ export default function RaceDayGuidePage() {
             Race Morning Timeline
           </h2>
           <p className="mt-3 max-w-2xl text-base leading-7 text-white/80 sm:text-lg sm:leading-8">
-            Use this schedule to plan your race morning from the moment you arrive to your
-            post-finish celebration.
+            Use this schedule to plan your race morning from the moment you arrive to your post-finish celebration.
           </p>
           <div className="mt-7 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
             {timeline.map((item) => (
@@ -94,7 +93,7 @@ export default function RaceDayGuidePage() {
             </h2>
             <ul className="mt-6 space-y-3 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
               <li className="rounded-2xl border border-white/15 bg-white/5 px-5 py-4">
-                <span className="font-black text-white">Packet pickup:</span> Advance pickup recommended. Friends or family may collect your bib on your behalf.
+                <span className="font-black text-white">Packet pickup:</span> Advance pickup is recommended. Friends or family may collect your bib on your behalf.
               </li>
               <li className="rounded-2xl border border-white/15 bg-white/5 px-5 py-4">
                 <span className="font-black text-white">5K start time:</span> 9:00 AM — be at the start line warmed up and ready by 8:50 AM.

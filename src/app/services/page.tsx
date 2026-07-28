@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CheckCircle, Flag, Footprints, Users } from "lucide-react";
+import { ArrowRight, CheckCircle, Flag, Footprints } from "lucide-react";
 
 import PageShell from "../../components/PageShell";
 import { siteContact } from "../../components/siteConfig";
 
 export const metadata: Metadata = {
   title: "Race Events | Hilliard Family Fun Run 5K",
-  description: "Explore both race distances at the Hilliard Family Fun Run — the timed 5K and the casual 1-Mile Family Fun Run.",
+  description: "Choose the distance that fits your day — a timed 5K or a relaxed 1-Mile Family Fun Run.",
 };
 
 const distances = [
@@ -17,10 +17,10 @@ const distances = [
     distance: "3.1 Miles",
     startTime: "9:00 AM",
     price: "$45",
-    body: "The signature distance of the Hilliard Family Fun Run. A timed 5K that winds through the paved trails of the Hilliard Sports Complex — open to competitive runners and casual walkers alike.",
+    body: "The signature event for runners and walkers who want a steady race-day challenge on paved trails.",
     features: [
       "Chip-timed finish",
-      "Results posted at ultrafitusa.com",
+      "Finish results posted online after the race",
       "Custom finisher medal with ribbon",
       "Race shirt included",
     ],
@@ -31,7 +31,7 @@ const distances = [
     distance: "1 Mile",
     startTime: "Approx. 9:10 AM",
     price: "$40",
-    body: "The perfect option for families, walkers, strollers, seniors, and first-timers. A relaxed one-mile loop on the newer trails surrounding the complex — your pace, your way.",
+    body: "A more relaxed one-mile route for families, walkers, strollers, seniors, and first-time participants.",
     features: [
       "Non-competitive, casual pace",
       "Strollers and seniors welcome",
@@ -47,9 +47,9 @@ export default function RaceEventsPage() {
       activeLabel="Event Details"
       hero={{
         eyebrow: "Race Distances",
-        title: "Two Events. One Great Morning.",
-        subtitle: "Whether you're chasing a PR or enjoying a casual stroll with the family, there's a distance made for you.",
-        imageUrl: "https://images.unsplash.com/photo-1616279969856-759f316a5ac1?auto=format&fit=crop&w=1600&q=80",
+        title: "One Morning. Two Ways To Join.",
+        subtitle: "Whether you are aiming for a fast time or a casual walk with friends, there is a distance that fits.",
+        imageUrl: "/new-image/race-park-crowd.png",
       }}
     >
       {/* Distance Cards */}
@@ -95,7 +95,7 @@ export default function RaceEventsPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-full border border-[#1f7f56] bg-[#1c9a64] px-7 py-3 text-sm font-black uppercase tracking-wide text-[#f7d96f] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:text-base"
                 >
-                  Register for this event
+                  Sign Up Now
                   <ArrowRight className="h-4 w-4" strokeWidth={2.6} />
                 </Link>
               </div>
@@ -110,23 +110,20 @@ export default function RaceEventsPage() {
           <div className="grid gap-6 rounded-[24px] border border-white/15 bg-[#1e252d] p-6 shadow-[0_18px_44px_rgba(0,0,0,0.35)] lg:grid-cols-12 lg:p-8">
             <div className="lg:col-span-7">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white/90">
-                About the Event
+                About The Race
               </p>
               <h2 className="mt-3 text-3xl font-black leading-[0.95] tracking-tight text-[#f3d27d] sm:text-4xl lg:text-5xl">
                 Hilliard Family Fun Run
               </h2>
               <p className="mt-4 max-w-3xl text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
-                Staged at the Hilliard Sports Complex — directly across from the Wellness Fitness Center —
-                the Hilliard Family Fun Run is a Central Ohio community tradition that brings together
-                hundreds of runners, walkers, families, and fitness enthusiasts for a morning of
-                movement and fun.
+                The Hilliard Family Fun Run takes place at the Hilliard Sports Complex across from the Wellness Fitness Center. It is a community-focused morning of movement for runners, walkers, families, and first-timers.
               </p>
 
               <div className="mt-7 grid gap-3">
                 {[
-                  "Both events start and finish at Hilliard Sports Complex",
-                  "Free parking on site — arrive early for the best spots",
-                  "Proceeds benefit a local Central Ohio non-profit organization",
+                  "Both distances start and finish at the Hilliard Sports Complex",
+                  "Free parking is available on site, and early arrival makes the morning easier",
+                  "Race proceeds support a local Central Ohio non-profit",
                 ].map((item) => (
                   <div
                     key={item}
@@ -159,7 +156,7 @@ export default function RaceEventsPage() {
 
             <div className="rounded-3xl border border-white/15 bg-white/5 p-5 shadow-inner lg:col-span-5">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white/90">
-                Quick Event Facts
+                Quick Facts
               </p>
               <div className="mt-4 space-y-4 text-base leading-7 text-white/90">
                 <p>

@@ -12,18 +12,18 @@ export const metadata: Metadata = {
 
 const values = [
   {
-    title: "Built for Everyone",
-    body: "Competitive runners, casual walkers, seniors, strollers, and first-timers are all equally welcome. No experience needed — just a willingness to show up and move.",
+    title: "Made for Every Pace",
+    body: "Experienced runners, casual walkers, seniors, strollers, and first-timers all fit naturally into this event. The only requirement is a willingness to join the fun.",
     icon: <Users className="h-5 w-5" strokeWidth={2.2} />,
   },
   {
     title: "Run With Purpose",
-    body: "Race proceeds fund a local Central Ohio non-profit organization. Every step you take — and every dollar you spend registering — goes back into the community you live in.",
+    body: "Proceeds are directed to a local Central Ohio non-profit, helping race day create a lasting benefit for the community.",
     icon: <Heart className="h-5 w-5" strokeWidth={2.2} />,
   },
   {
-    title: "Every Finish Counts",
-    body: "A custom finisher medal with ribbon is waiting at the end of your race. Whether you ran 5K or walked one mile, you earned it — and we want to celebrate it with you.",
+    title: "Every Finish Matters",
+    body: "At the finish line, every participant gets a custom medal and a well-earned reason to celebrate.",
     icon: <Trophy className="h-5 w-5" strokeWidth={2.2} />,
   },
 ];
@@ -42,8 +42,8 @@ export default function AboutPage() {
           </>
         ),
         subtitle:
-          "The Hilliard Family Fun Run is a Central Ohio community event where hundreds of runners and walkers gather each year for a morning of fitness, fun, and giving back.",
-        imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1600&q=80",
+          "The Hilliard Family Fun Run brings Central Ohio runners, walkers, families, seniors, and first-timers together for a morning that feels energetic, welcoming, and community-minded.",
+        imageUrl: "/new-image/autumn-group-run.png",
       }}
     >
       {/* Mission */}
@@ -54,13 +54,10 @@ export default function AboutPage() {
               Our Mission
             </h2>
             <p className="mt-4 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
-              The Hilliard Family Fun Run exists to bring people together — not just on race day,
-              but in the spirit of health, community, and shared purpose. We believe fitness should
-              be accessible and enjoyable for everyone, regardless of age, pace, or experience level.
+              This race is designed to make movement feel accessible. It gives the community an easy way to show up, get active, and enjoy race day side by side.
             </p>
             <p className="mt-3 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
-              Every registration supports a local non-profit, meaning your participation creates
-              a ripple of impact that stretches far beyond the finish line.
+              Each entry helps support a local non-profit, so every step on course adds up to something meaningful beyond the event itself.
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -84,7 +81,7 @@ export default function AboutPage() {
           <div className="lg:col-span-5">
             <div className="relative min-h-[280px] overflow-hidden rounded-3xl border border-white/15 bg-white/5 shadow-[0_18px_44px_rgba(0,0,0,0.30)] sm:min-h-[360px]">
               <Image
-                src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1400&q=80"
+                src="/new-image/race-start-crowd.png"
                 alt="Hilliard Family Fun Run — race morning energy"
                 fill
                 className="object-cover"
@@ -124,10 +121,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-black uppercase tracking-tight text-[#f3d27d]">The Setting</h2>
           <div className="mt-4">
             <p className="text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
-              Staged at the Hilliard Sports Complex — located directly across from the new
-              Wellness Fitness Center at 5001 Scioto Darby Rd — the race uses the beautiful
-              paved trail system that winds through the complex and surrounding area. Free
-              parking is available on site, and the venue offers easy access for the whole family.
+              The event is staged at the Hilliard Sports Complex across from the Wellness Fitness Center. The venue offers paved trails, simple parking, and a smooth arrival experience for families and runners alike.
             </p>
           </div>
         </div>
@@ -182,13 +176,13 @@ export default function AboutPage() {
                     href="/questions"
                     className="inline-flex items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-[#f7d96f] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-fit sm:text-base"
                   >
-                    Get In Touch
+                    Contact Us
                   </Link>
                   <Link
                     href="/"
                     className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-white transition hover:bg-white/15 sm:w-fit sm:text-base"
                   >
-                    Back To Home
+                    Return Home
                   </Link>
                 </div>
               </div>
@@ -196,7 +190,7 @@ export default function AboutPage() {
             <div className="lg:col-span-7">
               <div className="relative h-full min-h-[220px] overflow-hidden rounded-[24px] border border-white/15 bg-black/40 shadow-[0_18px_44px_rgba(0,0,0,0.25)] sm:min-h-[280px] lg:min-h-0">
                 <Image
-                  src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?auto=format&fit=crop&w=1400&q=80"
+                  src="/new-image/race-team-group.png"
                   alt="Hilliard Family Fun Run participants"
                   fill
                   className="object-cover"

@@ -26,9 +26,9 @@ export const siteContact = {
   directionsHref:
     "https://www.google.com/maps/search/?api=1&query=5001+Scioto+Darby+Rd,+Hilliard,+OH+43026",
   businessHours: [
-    "Race Day | 5K start at 9:00am",
-    "Race Day | 1-Mile Fun Run at approx 9:10am",
-    "Location | Hilliard Sports Complex, OH",
+    "Collection & Race Morning | 5K begins at 9:00 AM",
+    "Collection & Race Morning | 1-Mile Fun Run begins around 9:10 AM",
+    "Venue | Hilliard Sports Complex in Hilliard, OH",
   ],
   socials: [
     {

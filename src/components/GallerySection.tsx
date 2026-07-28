@@ -12,28 +12,28 @@ import "swiper/css/pagination";
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1564410267841-915d8e4d71ea?auto=format&fit=crop&w=1200&q=80",
-    alt: "Hilliard Family Fun Run — 5K group run on the course",
+    src: "/new-image/race-start-crowd.png",
+    alt: "Hilliard Family Fun Run — runners on the paved course",
   },
   {
-    src: "https://images.pexels.com/photos/2526878/pexels-photo-2526878.jpeg?auto=compress&cs=tinysrgb&w=1200&fit=crop&h=800",
-    alt: "Hilliard Family Fun Run — trail running through the park",
+    src: "/new-image/race-coastal-runners.png",
+    alt: "Hilliard Family Fun Run — trail running along the route",
   },
   {
-    src: "https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?auto=format&fit=crop&w=1200&q=80",
-    alt: "Hilliard Family Fun Run — crowd at the race start line",
+    src: "/new-image/race-crowd-finish.png",
+    alt: "Hilliard Family Fun Run — runners gathering at the start",
   },
   {
-    src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80",
-    alt: "Hilliard Family Fun Run — kids and families fun run",
+    src: "/new-image/race-cheer-signs.png",
+    alt: "Hilliard Family Fun Run — kids and families at the fun run",
   },
   {
-    src: "https://images.unsplash.com/photo-1606214174585-fe31582dc6ee?auto=format&fit=crop&w=1200&q=80",
-    alt: "Hilliard Family Fun Run — finisher medals with ribbon",
+    src: "/new-image/race-finish-ribbon.png",
+    alt: "Hilliard Family Fun Run — finisher medals on display",
   },
   {
-    src: "https://images.pexels.com/photos/2526875/pexels-photo-2526875.jpeg?auto=compress&cs=tinysrgb&w=1200&fit=crop&h=800",
-    alt: "Hilliard Family Fun Run — family running together in the park",
+    src: "/new-image/race-friends-pack.png",
+    alt: "Hilliard Family Fun Run — family running together on race day",
   },
 ];
 
@@ -46,7 +46,7 @@ type GallerySectionProps = {
 
 export default function GallerySection({
   ctaHref = "/case-studies",
-  ctaLabel = "View Race Day Guide",
+  ctaLabel = "Open Race Day Guide",
   fullWidth = false,
   showHeader = true,
 }: GallerySectionProps) {
@@ -59,11 +59,10 @@ export default function GallerySection({
               Event Gallery
             </p>
             <h2 className="mt-3 text-3xl font-black leading-[0.95] text-[#f0f7f8] sm:text-4xl lg:text-5xl">
-              Hilliard Family Fun Run Highlights
+              Race Day Highlights
             </h2>
             <p className="mt-4 text-base leading-7 text-[#c9d4da] sm:text-lg sm:leading-8">
-              Race-day moments featuring runners, walkers, families, and the community spirit
-              that makes the Hilliard Family Fun Run a Central Ohio tradition.
+              Race-day moments featuring runners, walkers, families, and the friendly energy that makes the Hilliard Family Fun Run stand out.
             </p>
           </div>
         ) : null}

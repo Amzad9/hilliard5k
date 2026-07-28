@@ -7,7 +7,7 @@ const siteUrl =
 
 const siteTitle = "2026 Hilliard Family Fun Run 5K";
 const siteDescription =
-  "Join the Hilliard Family Fun Run — a 5K race and 1-Mile Fun Run at Hilliard Sports Complex in Hilliard, Ohio. Open to runners, walkers, seniors, strollers and first-timers. Proceeds benefit a local non-profit.";
+  "Celebrate race day at the Hilliard Family Fun Run — a welcoming 5K and 1-Mile event at the Hilliard Sports Complex in Hilliard, Ohio, built for runners, walkers, families, and first-timers while supporting a local non-profit.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

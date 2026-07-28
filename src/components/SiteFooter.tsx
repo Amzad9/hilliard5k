@@ -26,9 +26,7 @@ export default function SiteFooter() {
                 className="object-contain p-4"
               />
             </div>
-            <p className="mt-2 text-sm text-[#d7dee2]">
-              Hilliard Family Fun Run — Central Ohio&apos;s 5K &amp; 1-Mile event
-            </p>
+           
           </div>
           <div className="col-span-1 hidden sm:col-span-2 sm:block">
             <h4 className="text-xl font-black uppercase text-white">Address</h4>

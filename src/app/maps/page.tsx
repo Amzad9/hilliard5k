@@ -12,18 +12,18 @@ export const metadata: Metadata = {
 
 const tips = [
   {
-    title: "Free Parking On Site",
-    body: "Plenty of free parking is available at and around the Hilliard Sports Complex. Arrive early on race morning to secure a convenient spot before the lot fills up.",
+    title: "Free Parking",
+    body: "There is plenty of free parking near the venue. Arriving early gives you the best chance at a convenient spot close to the action.",
     icon: <ParkingCircle className="h-5 w-5" strokeWidth={2.2} />,
   },
   {
-    title: "Arrive Early",
-    body: "Plan to arrive at least 30 minutes before your wave. That gives you time to park, warm up, collect your packet if needed, and make it to the start line relaxed.",
+    title: "Arrive With Time",
+    body: "Plan for an early arrival so you have time to park, warm up, and make your way to the start area without rushing.",
     icon: <Clock3 className="h-5 w-5" strokeWidth={2.2} />,
   },
   {
-    title: "Follow Race Signage",
-    body: "Event volunteers and race signage are placed throughout the complex and the surrounding roads. Follow their direction for safe, smooth traffic flow and race day navigation.",
+    title: "Follow Event Signs",
+    body: "Look for event signs and volunteer guidance as you approach the venue. They will help keep traffic moving safely and efficiently.",
     icon: <Car className="h-5 w-5" strokeWidth={2.2} />,
   },
 ];
@@ -42,8 +42,8 @@ export default function MapsPage() {
           </>
         ),
         subtitle:
-          "The Hilliard Sports Complex is easy to find and has plenty of parking. Here&apos;s everything you need to get there on race day.",
-        imageUrl: "https://images.unsplash.com/photo-1616279969856-759f316a5ac1?auto=format&fit=crop&w=1600&q=80",
+          "The Hilliard Sports Complex is easy to reach and has plenty of parking. These notes should make race morning arrival simple.",
+        imageUrl: "/new-image/race-park-crowd.png",
       }}
     >
       <section className="px-4 py-10 sm:px-8 sm:py-14">
@@ -57,7 +57,7 @@ export default function MapsPage() {
                 </span>
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white/85">
-                    Race Venue Address
+                    Venue Address
                   </p>
                   <p className="mt-3 text-lg font-black text-white">{siteContact.addressLines[0]}</p>
                   <p className="mt-2 text-base leading-7 text-white/80">
@@ -66,7 +66,7 @@ export default function MapsPage() {
                     {siteContact.addressLines[2]}
                   </p>
                   <p className="mt-2 text-sm text-white/65">
-                    Located directly across from the new Wellness Fitness Center on Scioto Darby Rd.
+                    The venue sits directly across from the Wellness Fitness Center on Scioto Darby Rd.
                   </p>
                   <a
                     href={siteContact.directionsHref}
@@ -104,13 +104,13 @@ export default function MapsPage() {
                 href="/event-details"
                 className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-white transition hover:bg-white/15 sm:w-fit sm:text-base"
               >
-                Event Details
+                Race Details
               </Link>
               <Link
                 href="/questions"
                 className="inline-flex items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-[#f7d96f] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-fit sm:text-base"
               >
-                Contact Us
+                Need Help?
               </Link>
             </div>
           </div>
@@ -123,8 +123,7 @@ export default function MapsPage() {
                   Interactive Map
                 </p>
                 <p className="text-base leading-7 text-white/80 sm:text-lg sm:leading-8">
-                  Tap and zoom to plan your drive. The Hilliard Sports Complex is conveniently located
-                  off Scioto Darby Rd in Hilliard, Ohio.
+                  Tap and zoom to plan your drive. The Hilliard Sports Complex is conveniently located off Scioto Darby Rd in Hilliard, Ohio.
                 </p>
               </div>
 

@@ -28,9 +28,7 @@ export default function Home() {
                   Hilliard, Ohio
                 </p>
                 <p className="mt-5 max-w-4xl text-lg leading-9 text-white/95 sm:text-2xl sm:leading-[1.3]">
-                  Lace up and join hundreds of Central Ohio running and walking enthusiasts for
-                  a morning of movement, community, and fun at the Hilliard Sports Complex.
-                  Two distances — one unforgettable race morning.
+                  Central Ohio runners, walkers, families, seniors, and first-time participants are all welcome. Come for the movement, the atmosphere, and the chance to support a local cause.
                 </p>
                 <div className="mt-7">
                   <Link
@@ -47,7 +45,7 @@ export default function Home() {
               <div className="relative overflow-hidden rounded-3xl">
                 <div className="relative aspect-video w-full overflow-hidden rounded-3xl border border-white/15 bg-[#1e252d]">
                   <Image
-                    src="https://images.unsplash.com/photo-1461897104016-0b3b00cc81ee?auto=format&fit=crop&w=1400&q=80"
+                    src="/new-image/marathon-start-bridge.png"
                     alt="Hilliard Family Fun Run participants at the starting line"
                     fill
                     className="object-cover"
@@ -65,15 +63,15 @@ export default function Home() {
             {[
               {
                 title: "5K Run / Walk",
-                body: "3.1 miles of fully paved trails winding through the Hilliard Sports Complex. Chip-timed with results posted online. Start time: 9:00 AM.",
+                body: "A straightforward 3.1-mile paved route for runners and walkers who want a clear, well-marked challenge.",
               },
               {
                 title: "1-Mile Fun Run",
-                body: "A welcoming distance for walkers, seniors, strollers, and families. Begins approx. 9:10 AM — no pressure, all fun.",
+                body: "A low-pressure one-mile option for strollers, seniors, kids, and anyone who wants a lighter race morning.",
               },
               {
                 title: "Community Impact",
-                body: "Every registration matters. Race proceeds go directly to a local Central Ohio non-profit, turning every mile into meaningful change.",
+                body: "Every registration helps a local non-profit and turns race day into something bigger than the course.",
               },
             ].map((item) => (
               <article key={item.title} className="rounded-2xl border border-white/12 bg-white/5 p-4">
@@ -97,9 +95,7 @@ export default function Home() {
                     Hilliard Sports Complex
                   </h2>
                   <p className="mt-4 max-w-3xl text-lg leading-8 text-white/90 sm:text-xl">
-                    All race activities — start, finish, packet pickup, and post-race celebration —
-                    take place at the Hilliard Sports Complex, 5001 Scioto Darby Rd, Hilliard, OH 43026,
-                    directly across from the Wellness Fitness Center.
+                    Everything unfolds at the Hilliard Sports Complex, directly across from the Wellness Fitness Center. It is an easy-to-navigate venue with room for participants, families, and supporters.
                   </p>
                 </div>
                 <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-black uppercase tracking-[0.12em] text-white/90">
@@ -137,9 +133,7 @@ export default function Home() {
                     1-Mile Family Fun Run
                   </h3>
                   <p className="mt-3 text-base leading-7 text-white/85 sm:text-lg">
-                    Made for everyone who prefers a relaxed, no-pressure distance. Strollers,
-                    seniors, first-timers, and families can enjoy the newer trails around the
-                    sports complex at their own pace. Every finisher earns a medal.
+                    This shorter route keeps the morning relaxed and is ideal for walkers, families, strollers, seniors, and first-time participants.
                   </p>
                   <div className="mt-5">
                     <Link
@@ -177,7 +171,7 @@ export default function Home() {
                 <div className="relative overflow-hidden rounded-3xl border border-white/15 bg-[#1e252d] shadow-[0_18px_44px_rgba(0,0,0,0.25)]">
                   <div className="relative aspect-16/10 w-full">
                     <Image
-                      src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=1400&q=80"
+                      src="/new-image/race-finish-ribbon.png"
                       alt="Runners celebrating at the finish line"
                       fill
                       className="object-cover"
@@ -196,15 +190,15 @@ export default function Home() {
                 {[
                   {
                     title: "Race Shirt",
-                    body: "All registered participants receive a colorful event shirt featuring the official Hilliard Family Fun Run logo — a wearable reminder of your race day.",
+                    body: "All registered participants receive a colorful event shirt featuring the official Hilliard Family Fun Run logo — a simple keepsake from race day.",
                   },
                   {
                     title: "Finisher Medal",
-                    body: "A custom finish medal with ribbon awaits every finisher. You trained for it, you ran for it — now wear it proudly.",
+                    body: "A custom finish medal with ribbon awaits every finisher. You trained for it, earned it, and now get to wear it with pride.",
                   },
                   {
                     title: "Finish Line Food",
-                    body: "Post-race food and drinks are served at the finish line. Refuel, celebrate, and relive the highlights with your crew.",
+                    body: "Finish-line food and drinks are served after the race. Refuel, celebrate, and replay the best moments with your crew.",
                   },
                 ].map((item) => (
                   <article key={item.title} className="rounded-3xl border border-white/15 bg-[#1e252d] p-6">
@@ -252,7 +246,7 @@ export default function Home() {
             <div className="relative overflow-hidden rounded-3xl border border-white/15 bg-[#1e252d] shadow-[0_18px_44px_rgba(0,0,0,0.25)]">
               <div className="relative aspect-video w-full overflow-hidden rounded-3xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1593476087123-36d1de271f08?auto=format&fit=crop&w=1400&q=80"
+                  src="/new-image/race-crowd-finish.png"
                   alt="Hilliard Sports Complex race venue"
                   fill
                   className="object-cover"
@@ -267,7 +261,7 @@ export default function Home() {
           <div className="container mx-auto grid gap-6 lg:grid-cols-[0.5fr_1fr]">
             <div className="relative min-h-[250px] overflow-hidden rounded-3xl border border-white/15">
               <Image
-                src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1400&q=80"
+                src="/new-image/race-coastal-runners.png"
                 alt="Hilliard Fun Run participants enjoying the course"
                 fill
                 className="object-cover"
@@ -278,19 +272,19 @@ export default function Home() {
                 Why People Love This Race
               </h3>
               <p className="mt-4 max-w-6xl text-xl leading-8 text-white/95 sm:text-xl sm:leading-[1.3]">
-                The Hilliard Family Fun Run isn&apos;t just a race — it&apos;s a community gathering
-                that draws hundreds of Central Ohio residents together every year.
+                The Hilliard Family Fun Run is more than a race morning — it&apos;s a local
+                tradition that brings Central Ohio residents together year after year.
               </p>
               <p className="mt-3 max-w-6xl text-xl leading-8 text-white/95 sm:text-xl sm:leading-[1.3]">
-                Avid runners push their pace on the timed 5K while first-timers and families enjoy
-                the pressure-free 1-Mile course. Everyone gets a race shirt and a finisher medal.
-                Everyone contributes to a local non-profit.
+                Competitive runners can chase a strong 5K while first-timers and families enjoy
+                the easygoing 1-Mile course. Every participant receives race-day gear, and every
+                entry supports a local non-profit.
               </p>
               <p className="mt-3 max-w-6xl text-xl leading-8 text-white/95 sm:text-xl sm:leading-[1.3]">
-                It&apos;s a morning that reminds you why community and fitness go hand in hand.
+                It&apos;s the kind of morning that makes community and movement feel inseparable.
               </p>
               <p className="mt-5 text-xl text-white sm:text-xl">
-                Come out, run your race, and be part of something bigger than the finish line.
+                Show up, run or walk your distance, and be part of something that reaches beyond the finish line.
               </p>
               <div className="mt-6">
                 <Link
@@ -313,17 +307,17 @@ export default function Home() {
               {
                 eyebrow: "Race Results",
                 title: "Results Posted Online",
-                body: "Finish times are recorded and published at ultrafitusa.com following the event. Look up your time and share it with friends.",
+                body: "Finish times are recorded and posted online after the event. Check your result, compare notes, and share it with friends.",
               },
               {
                 eyebrow: "Packet Pickup",
                 title: "Advance Pickup Available",
-                body: "Pick up your race packet before race day to skip the morning lines. A friend or family member can also collect on your behalf.",
+                body: "Pick up your race packet before race day to keep race morning simple. A friend or family member can also collect on your behalf.",
               },
               {
                 eyebrow: "Race Hotline",
                 title: "(614) 332-5205",
-                body: "Questions about registration, logistics, or race day? Our hotline is staffed and ready to help.",
+                body: "Questions about registration, timing, or race-day logistics? Our hotline is ready to help.",
               },
             ].map((item) => (
               <article key={item.title} className="rounded-2xl border border-white/12 bg-white/5 p-6">

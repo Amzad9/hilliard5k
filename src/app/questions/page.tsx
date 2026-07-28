@@ -7,49 +7,49 @@ import { siteContact } from "../../components/siteConfig";
 
 export const metadata: Metadata = {
   title: "Questions | Hilliard Family Fun Run 5K",
-  description: "Answers to common questions about the Hilliard Family Fun Run — registration, packet pickup, race day, and more.",
+  description: "Answers to common questions about the Hilliard Family Fun Run — registration, packet pickup, race day, and everything in between.",
 };
 
 const faq = [
   {
     question: "How do I register?",
-    answer: "Registration is available online at www.ultrafit-usa.com/hilliard5k. Click any &apos;Register Now&apos; button on this site to go directly to the registration page.",
+    answer: "Registration is available online at www.ultrafit-usa.com/hilliard5k. Any Register Now button on the site will take you straight to the signup page.",
   },
   {
     question: "What race distances are available?",
-    answer: "We offer a chip-timed 5K (starting at 9:00 AM) and a 1-Mile Family Fun Run (starting approx. 9:10 AM). Both start and finish at the Hilliard Sports Complex.",
+    answer: "There are two choices: a chip-timed 5K starting at 9:00 AM and a 1-Mile Family Fun Run starting around 9:10 AM. Both begin and end at Hilliard Sports Complex.",
   },
   {
     question: "What are the entry fees?",
-    answer: "The 5K is $45 and the 1-Mile Fun Run is $40. Prices increase after August 1st — register early to lock in the lower rate.",
+    answer: "Entry is $45 for the 5K and $40 for the 1-Mile Fun Run. Rates increase after August 1st, so early registration is the best value.",
   },
   {
     question: "Who can participate in the 1-Mile Fun Run?",
-    answer: "Everyone! The 1-Mile Fun Run is designed for walkers, seniors, strollers, families, and first-timers. There is no pressure and no minimum pace — come out and enjoy it.",
+    answer: "Anyone can join the 1-Mile Fun Run. It is built for walkers, seniors, strollers, families, and first-timers who want a more relaxed morning.",
   },
   {
     question: "Can someone else pick up my packet?",
-    answer: "Yes. A friend or family member may pick up your race packet on your behalf. Share your full name and registered event with them and they can collect it at pickup.",
+    answer: "Yes. Someone else may pick up your packet for you as long as they know your full name and registered event.",
   },
   {
     question: "Where will race results be posted?",
-    answer: "All 5K finish times are recorded and posted online at www.ultrafitusa.com after the event. Check there after race day for your official time.",
+    answer: "5K finish times are recorded and posted online after the event at www.ultrafitusa.com.",
   },
   {
     question: "Where do I park?",
-    answer: "There is free parking at and around the Hilliard Sports Complex. Arrive early to get a good spot, and please exercise caution in the lot when you arrive.",
+    answer: "Free parking is available around the Hilliard Sports Complex. Arriving early helps you avoid the busiest part of race morning.",
   },
   {
     question: "What do I receive when I register?",
-    answer: "All registered participants receive a colorful race shirt with the official logo. Every finisher receives a custom medal with ribbon. Finish line food and beverages are also provided.",
+    answer: "Every registered participant receives a race shirt, and every finisher gets a custom medal with ribbon. Finish-line food and drinks are part of the celebration too.",
   },
   {
     question: "Is the course accessible for strollers?",
-    answer: "Yes. The 1-Mile Fun Run uses the newer paved trails surrounding the sports complex and is designed to be accessible for strollers, seniors, and participants of all mobility levels.",
+    answer: "Yes. The 1-Mile Fun Run follows the newer paved trails around the sports complex and works well for strollers, seniors, and slower-paced participants.",
   },
   {
     question: "Are entries refundable?",
-    answer: "Race entries are non-refundable. For safety and accurate timing, unofficial bib transfers are not permitted. Contact us with any questions.",
+    answer: "Entries are non-refundable, and bib transfers are not allowed. Reach out if you have a question about your registration.",
   },
 ];
 
@@ -60,8 +60,8 @@ export default function QuestionsPage() {
       hero={{
         eyebrow: "Questions",
         title: "We\u2019re Happy To Help",
-        subtitle: "Find answers to common questions below — or reach us directly by phone or email. We&apos;re here before, during, and after race day.",
-        imageUrl: "https://images.unsplash.com/photo-1502904550040-7534597429ae?auto=format&fit=crop&w=1600&q=80",
+        subtitle: "Browse the most common questions below, or reach out by phone or email if you need a quick answer before race day.",
+        imageUrl: "/new-image/race-cheer-signs.png",
       }}
     >
       {/* Contact methods */}
@@ -75,7 +75,7 @@ export default function QuestionsPage() {
             <h2 className="mt-4 text-xl font-black uppercase text-white">Race Hotline</h2>
             <p className="mt-2 text-white/85">{siteContact.phone}</p>
             <p className="mt-1 text-sm text-white/60">
-              Call us for any race question — registration, packet pickup, course info, or general help.
+              Reach out for help with registration, packet pickup, race-day logistics, or anything else on your mind.
             </p>
           </a>
           <a
@@ -86,7 +86,7 @@ export default function QuestionsPage() {
             <h2 className="mt-4 text-xl font-black uppercase text-white">Email Us</h2>
             <p className="mt-2 text-white/85">{siteContact.emailShowroom}</p>
             <p className="mt-1 text-sm text-white/60">
-              Send us an email any time — we typically respond within one business day.
+              Send us an email anytime and we will get back to you as soon as we can.
             </p>
           </a>
           <Link
@@ -96,7 +96,7 @@ export default function QuestionsPage() {
             <MessageCircle className="h-6 w-6 text-[#f3d27d]" strokeWidth={2.2} />
             <h2 className="mt-4 text-xl font-black uppercase text-white">Event Info</h2>
             <p className="mt-2 text-white/85">
-              See race distances, start times, course maps, pricing, and registration links.
+              Open the event details page for distances, timing, course notes, pricing, and signup links.
             </p>
           </Link>
         </div>

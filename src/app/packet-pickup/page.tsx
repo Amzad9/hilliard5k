@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 };
 
 const pickupDates = [
-  "Advance packet pickup available — details to be announced closer to race day",
-  "Race-morning packet pickup available at the venue before race start",
-  "Friends or family members may pick up your packet on your behalf",
+  "Advance pickup details will be shared closer to race day",
+  "Race-morning pickup will also be available before the start",
+  "A friend or family member can pick up your packet for you",
 ];
 
 const checklistItems = [
@@ -38,7 +38,7 @@ export default function PacketPickupPage() {
         eyebrow: "Packet Pickup",
         title: "Get Your Bib. Get Ready.",
         subtitle: "Advance packet pickup is available before race day. Race-morning pickup is also available — but arriving early is the best strategy.",
-        imageUrl: "https://images.unsplash.com/photo-1514995669114-6081e934b693?auto=format&fit=crop&w=1600&q=80",
+        imageUrl: "/new-image/race-medal-handoff.png",
       }}
     >
       {/* Pickup info + quick notes */}
@@ -46,12 +46,10 @@ export default function PacketPickupPage() {
         <div className="container mx-auto grid gap-6 lg:grid-cols-12">
           <div className="lg:col-span-7 rounded-[24px] border border-white/15 bg-[#1e252d] p-6 shadow-[0_18px_44px_rgba(0,0,0,0.35)] sm:p-8">
             <h2 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-4xl">
-              Pickup Information
+              Pickup Details
             </h2>
             <p className="mt-4 text-base leading-7 text-white/85 sm:text-lg sm:leading-8">
-              Picking up your packet in advance means you arrive on race morning stress-free,
-              bib pinned and ready to race. Advance pickup sessions are announced closer to the
-              event — check this page or call our hotline for the latest schedule.
+              Picking up your bib early keeps race morning simple. We will share advance pickup details as race day gets closer, and the hotline can always point you to the latest update.
             </p>
             <ul className="mt-6 space-y-3">
               {pickupDates.map((item) => (
@@ -61,7 +59,7 @@ export default function PacketPickupPage() {
               ))}
             </ul>
             <p className="mt-5 text-base leading-7 text-white/85 sm:text-lg sm:leading-8">
-              For the latest pickup schedule, contact our race hotline at{" "}
+              For the latest pickup update, contact the race hotline at{" "}
               <a href={siteContact.phoneHref} className="font-semibold text-[#f3d27d] transition hover:brightness-110">
                 {siteContact.phone}
               </a>{" "}
@@ -81,11 +79,11 @@ export default function PacketPickupPage() {
               </p>
               <p className="flex items-center gap-2">
                 <Clock3 className="h-4 w-4 shrink-0 text-[#f3d27d]" />
-                Arrive at least 30 minutes before your start time for parking and warm-up
+                Plan to arrive early enough to park, warm up, and settle in before your start time
               </p>
               <p className="flex items-center gap-2">
                 <CalendarDays className="h-4 w-4 shrink-0 text-[#f3d27d]" />
-                Keep your bib accessible on race morning — pin it before you leave home
+                Keep your bib and confirmation ready before you arrive so check-in goes faster
               </p>
             </div>
             <div className="mt-7">
@@ -105,12 +103,10 @@ export default function PacketPickupPage() {
         <div className="container mx-auto grid gap-6 lg:grid-cols-12">
           <div className="lg:col-span-7 rounded-[24px] border border-white/15 bg-white/5 p-6 shadow-[0_18px_44px_rgba(0,0,0,0.25)] sm:p-8">
             <h2 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-4xl">
-              Location &amp; Parking
+              Getting There
             </h2>
             <p className="mt-4 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
-              The Hilliard Sports Complex is located directly across from the new Wellness Fitness
-              Center on Scioto Darby Rd. Free parking is available on site — please arrive early
-              and follow volunteer direction when entering the lot.
+              The Hilliard Sports Complex is located directly across from the new Wellness Fitness Center on Scioto Darby Rd. Free parking is available on site — please arrive early and follow volunteer direction when entering the lot.
             </p>
             <div className="mt-5 grid gap-3">
               <div className="rounded-2xl border border-white/15 bg-white/5 px-5 py-4 text-white/90">
@@ -131,7 +127,7 @@ export default function PacketPickupPage() {
           </div>
 
           <div className="lg:col-span-5 rounded-[24px] border border-white/15 bg-[#1e252d] p-6 shadow-[0_18px_44px_rgba(0,0,0,0.35)] sm:p-8">
-            <h3 className="text-xl font-black uppercase tracking-tight text-white">What To Bring</h3>
+            <h3 className="text-xl font-black uppercase tracking-tight text-white">Bring These Items</h3>
             <ul className="mt-4 space-y-3">
               {checklistItems.map((item) => (
                 <li
@@ -150,7 +146,7 @@ export default function PacketPickupPage() {
       <section className="px-4 pb-12 pt-10 sm:px-8 sm:pb-16 sm:pt-14">
         <div className="container mx-auto rounded-[24px] border border-white/15 bg-white/5 p-6 shadow-[0_18px_44px_rgba(0,0,0,0.25)] sm:p-8">
           <h2 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-4xl">
-            Picking Up For Someone Else
+            Picking Up For A Teammate
           </h2>
           <p className="mt-4 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
             Can&apos;t make it to pickup? No problem. We support proxy pickup to make race morning
@@ -170,12 +166,10 @@ export default function PacketPickupPage() {
           <div className="mt-8 rounded-2xl border border-white/15 bg-[#1e252d] p-5">
             <p className="flex items-center gap-2 text-sm font-black uppercase tracking-[0.08em] text-[#f3d27d]">
               <ShieldCheck className="h-4 w-4" />
-              Important Policy
+              Important Note
             </p>
             <p className="mt-3 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
-              Race entries are non-refundable. For safety and accurate chip timing, unofficial
-              bib transfers are not permitted. Only the registered runner may race with their
-              assigned bib number.
+              Entries are non-refundable, and bib transfers are not allowed. Only the registered runner may use the assigned bib.
             </p>
           </div>
 
