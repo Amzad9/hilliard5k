@@ -20,7 +20,7 @@ export default function SiteFooter() {
           <div className="col-span-1 flex flex-col gap-0 sm:col-span-4">
             <div className="relative aspect-video overflow-hidden rounded-md bg-[#1a2027]">
               <Image
-                src="/hilliard-logo.avif"
+                src="/new-image/Hilliard 5K Family Fun Run.png"
                 alt="Hilliard Family Fun Run 5K"
                 fill
                 className="object-contain p-4"

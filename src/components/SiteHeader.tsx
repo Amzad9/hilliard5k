@@ -94,9 +94,9 @@ export default function SiteHeader({ activeLabel }: { activeLabel?: string }) {
           className="flex min-w-0 shrink-0 items-center"
           aria-label="Hilliard Family Fun Run 5K"
         >
-          <div className="relative overflow-hidden rounded-md bg-transparent h-28 w-68">
+          <div className="relative overf flex justify-start low-hidden rounded-md bg-transparent h-28 w-28">
             <Image
-              src="/hilliard-logo.avif"
+              src="/new-image/Hilliard 5K Family Fun Run.png"
               alt="Hilliard Family Fun Run 5K logo"
               fill
               className="object-contain"
