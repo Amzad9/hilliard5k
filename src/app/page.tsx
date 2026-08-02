@@ -19,14 +19,12 @@ export default function Home() {
             <div className="relative z-10 grid gap-6 lg:grid-cols-2 lg:items-center">
               <div className="max-w-7xl">
                 <h1 className="text-4xl md:text-4xl font-black uppercase leading-[0.92] text-[#00a2e7]">
-                  Hilliard Family Fun Run
+                HILLIARD 5K AND FUN RUN.
                 </h1>
                 <p className="mt-3 text-2xl font-semibold text-[#f3d27d] sm:text-4xl">
-                  5K &amp; 1-Mile Fun Run — 2026
+                November 1st, 9am (Hilliard Ohio)
                 </p>
-                <p className="mt-3 text-2xl font-semibold text-[#f3d27d] sm:text-4xl">
-                  Hilliard, Ohio
-                </p>
+              
                 <p className="mt-5 max-w-4xl text-lg leading-9 text-white/95 sm:text-2xl sm:leading-[1.3]">
                   Central Ohio runners, walkers, families, seniors, and first-time participants are all welcome. Come for the movement, the atmosphere, and the chance to support a local cause.
                 </p>
@@ -45,7 +43,7 @@ export default function Home() {
               <div className="relative overflow-hidden rounded-3xl">
                 <div className="relative aspect-video w-full overflow-hidden rounded-3xl border border-white/15 bg-[#1e252d]">
                   <Image
-                    src="/new-image/marathon-start-bridge.png"
+                    src="/new-image/race-finisher-portrait.png"
                     alt="Hilliard Family Fun Run participants at the starting line"
                     fill
                     className="object-cover"
