@@ -13,7 +13,7 @@ const swagItems = [
   {
     title: "Custom Race Shirt",
     body: "Every registered participant receives an event shirt with the Hilliard Family Fun Run logo. Supplies are limited, so registering early is the smartest move.",
-    image: "/new-image/race-start-crowd.png",
+    image: "/Hilliard 5K - Long Sleeve Shirt.jpg",
   },
   {
     title: "Custom Finisher Medal",

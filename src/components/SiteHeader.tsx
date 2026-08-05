@@ -27,8 +27,8 @@ export default function SiteHeader({ activeLabel }: { activeLabel?: string }) {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-30 px-0 pt-1 bg-[#232a33]">
-      <div className="w-full border-b border-white/10 bg-[#0c1016]">
+      <header className="fixed inset-x-0 top-0 z-30 px-0 pt-1 bg-[#000000]">
+      <div className="w-full border-b border-white/10 bg-[#000000]">
         <div className="container mx-auto flex flex-col items-center justify-between gap-2 px-3 py-2 text-center sm:flex-row sm:text-left">
           <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[12px] text-white/80 sm:justify-start">
             <a href={siteContact.phoneHref} className="inline-flex items-center gap-2 transition hover:text-white">
@@ -94,15 +94,28 @@ export default function SiteHeader({ activeLabel }: { activeLabel?: string }) {
           className="flex min-w-0 shrink-0 items-center"
           aria-label="Hilliard Family Fun Run 5K"
         >
-          <div className="relative overf flex justify-start low-hidden rounded-md bg-transparent h-28 w-28">
-            <Image
-              src="/new-image/Hilliard 5K Family Fun Run.png"
-              alt="Hilliard Family Fun Run 5K logo"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
+         <div className="flex gap-4 items-center">
+  <div className="relative h-32 w-32 shrink-0">
+    <Image
+      src="/new-image/Hilliard 5K Family Fun Run.png"
+      alt="Hilliard Family Fun Run 5K logo"
+      fill
+      className="object-contain"
+      priority
+    />
+  </div>
+
+  <div className="-ml-2 flex flex-col">
+    <h1 className="md:text-[36px] text-[22px] font-extrabold leading-none">
+      <span className="text-[#1F3B8F]">HILLIARD</span>{" "}
+      <span className="text-[#18A84A]">5K</span>
+    </h1>
+
+    <h2 className="mt-1 md:text-[22px] text-[16px] text-center font-semibold leading-none tracking-wide text-[#00AEEF]">
+      FAMILY FUN RUN
+    </h2>
+  </div>
+</div>
         </Link>
 
         <button
