@@ -41,14 +41,27 @@ export default function Home() {
               </div>
 
               <div className="relative overflow-hidden rounded-3xl">
-                <div className="relative aspect-video w-full overflow-hidden rounded-3xl border border-white/15 bg-[#1e252d]">
-                  <Image
+                <div className="relative mt-5 aspect-video w-full overflow-hidden  rounded-3xl border border-white/15 bg-[#1e252d]">
+                  {/* <Image
                     src="/new-image/race-finisher-portrait.png"
                     alt="Hilliard Family Fun Run participants at the starting line"
                     fill
                     className="object-cover"
                     priority
-                  />
+                  /> */}
+                  <video
+  className="absolute inset-0 h-full w-full object-contain p-0"
+  autoPlay
+  muted
+  loop
+  playsInline
+>
+  <source
+    src="/new-image/Hilliard 5K - Family Fun Run Animation (1) (1).mp4"
+    type="video/mp4"
+  />
+  Your browser does not support the video tag.
+</video>
                 </div>
               </div>
             </div>
