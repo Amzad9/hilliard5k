@@ -42,26 +42,14 @@ export default function Home() {
 
               <div className="relative overflow-hidden rounded-3xl">
                 <div className="relative mt-5 aspect-video w-full overflow-hidden  rounded-3xl border border-white/15 bg-[#1e252d]">
-                  {/* <Image
+                  <Image
                     src="/new-image/race-finisher-portrait.png"
                     alt="Hilliard Family Fun Run participants at the starting line"
                     fill
                     className="object-cover"
                     priority
-                  /> */}
-                  <video
-  className="absolute inset-0 h-full w-full object-contain p-0"
-  autoPlay
-  muted
-  loop
-  playsInline
->
-  <source
-    src="/new-image/Hilliard 5K - Family Fun Run Animation (1) (1).mp4"
-    type="video/mp4"
-  />
-  Your browser does not support the video tag.
-</video>
+                  />
+                 
                 </div>
               </div>
             </div>
@@ -277,33 +265,32 @@ export default function Home() {
         {/* ── ABOUT SECTION ── */}
         <section id="about-race" className="mt-0 bg-[#1e252d] px-4 py-6 sm:px-8 sm:py-12">
           <div className="container mx-auto grid gap-6 lg:grid-cols-[0.5fr_1fr]">
-            <div className="relative min-h-[250px] overflow-hidden rounded-3xl border border-white/15">
-              <Image
-                src="/new-image/race-coastal-runners.png"
-                alt="Hilliard Fun Run participants enjoying the course"
-                fill
-                className="object-cover"
-              />
+            <div className="relative min-h-[250px] overflow-hidden rounded-3xl ">
+            <video
+  className="absolute inset-0 h-full w-full object-contain p-0"
+  autoPlay
+  muted
+  loop
+  playsInline
+>
+  <source
+    src="/new-image/Hilliard 5K - Family Fun Run Animation (1) (1).mp4"
+    type="video/mp4"
+  />
+  Your browser does not support the video tag.
+</video>
             </div>
             <div>
               <h3 className="md:text-4xl font-black uppercase leading-none text-[#f3d27d] text-2xl">
                 Why People Love This Race
               </h3>
               <p className="mt-4 max-w-6xl text-xl leading-8 text-white/95 sm:text-xl sm:leading-[1.3]">
-                The Hilliard Family Fun Run is more than a race morning — it&apos;s a local
-                tradition that brings Central Ohio residents together year after year.
+              Welcome to the first annual Hilliard 5K and Family Fun Run. We hope to start a local tradition that brings Central Ohio residents together year after year.
               </p>
               <p className="mt-3 max-w-6xl text-xl leading-8 text-white/95 sm:text-xl sm:leading-[1.3]">
-                Competitive runners can chase a strong 5K while first-timers and families enjoy
-                the easygoing 1-Mile course. Every participant receives race-day gear, and every
-                entry supports a local non-profit.
+              Designed for both competitive runners as well as the more casual runner or walker looking for a fun and friendly venue. Our Family Fun Run (or walk) is the perfect distance for those who enjoy the outdoors, clean air, meeting new people and lacing up the sneakers. Seniors…………..this is for you!
               </p>
-              <p className="mt-3 max-w-6xl text-xl leading-8 text-white/95 sm:text-xl sm:leading-[1.3]">
-                It&apos;s the kind of morning that makes community and movement feel inseparable.
-              </p>
-              <p className="mt-5 text-xl text-white sm:text-xl">
-                Show up, run or walk your distance, and be part of something that reaches beyond the finish line.
-              </p>
+             
               <div className="mt-6">
                 <Link
                   href="https://www.ultrafit-usa.com/hilliard5k"
