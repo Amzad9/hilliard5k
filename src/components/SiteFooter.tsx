@@ -19,21 +19,21 @@ export default function SiteFooter() {
 
           <div className="col-span-1 flex flex-col gap-0 sm:col-span-4">
             <div className="relative aspect-video overflow-hidden rounded-md bg-[#1a2027]">
-            <video
-  className="absolute inset-0 h-full w-full object-contain p-4"
-  autoPlay
-  muted
-  loop
-  playsInline
->
-  <source
-    src="/new-image/Hilliard 5K - Family Fun Run Animation (1) (1).mp4"
-    type="video/mp4"
-  />
-  Your browser does not support the video tag.
-</video>
+              <video
+                className="absolute inset-0 h-full w-full object-contain p-4"
+                autoPlay
+                muted
+                loop
+                playsInline
+              >
+                <source
+                  src="/new-image/Hilliard 5K - Family Fun Run Animation (1) (1).mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
             </div>
-           
+
           </div>
           <div className="col-span-1 hidden sm:col-span-2 sm:block">
             <h4 className="text-xl font-black uppercase text-white">Address</h4>
