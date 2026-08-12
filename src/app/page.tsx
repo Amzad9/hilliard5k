@@ -174,14 +174,27 @@ export default function Home() {
 </p>
                 </div>
 
-                <div className="relative overflow-hidden rounded-3xl border border-white/15 bg-[#1e252d] shadow-[0_18px_44px_rgba(0,0,0,0.25)]">
-                  <div className="relative aspect-16/10 w-full">
-                    <Image
+                <div className="relative overflow-hidden rounded-3xl  bg-[#1e252d] shadow-[0_18px_44px_rgba(0,0,0,0.25)]">
+                  <div className="relative aspect-18/10 w-full">
+                    {/* <Image
                       src="/new-image/race-finish-ribbon.png"
                       alt="Runners celebrating at the finish line"
                       fill
                       className="object-cover"
-                    />
+                    /> */}
+                     <video
+  className="absolute inset-0 h-full w-full object-contain p-0"
+  autoPlay
+  muted
+  loop
+  playsInline
+>
+  <source
+    src="/new-image/Hilliard 5K - Family Fun Run Animation (1) (1).mp4"
+    type="video/mp4"
+  />
+  Your browser does not support the video tag.
+</video>
                   </div>
                   <div className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-black/40 px-3 py-2 backdrop-blur">
                     <span className="h-2 w-2 rounded-full bg-[#f3d27d]" aria-hidden />
@@ -231,7 +244,7 @@ export default function Home() {
               <ul className="mt-5 space-y-4 text-xl leading-tight text-white/95 sm:text-xl">
                 <li>
                   <span className="font-semibold">Entry Fee:</span> 5K — $45 &nbsp;|&nbsp; 1-Mile Fun Run — $40.
-                  Prices increase August 1st — register early to lock in the lower rate.
+                  Prices increase September 1st — register early to lock in the lower rate.
                 </li>
                 <li>
                   <span className="font-semibold">Race morning schedule:</span> 5K starts at 9:00 AM,
@@ -251,12 +264,25 @@ export default function Home() {
             </div>
             <div className="relative overflow-hidden rounded-3xl border border-white/15 bg-[#1e252d] shadow-[0_18px_44px_rgba(0,0,0,0.25)]">
               <div className="relative aspect-video w-full overflow-hidden rounded-3xl">
-                <Image
+                {/* <Image
                   src="/new-image/race-crowd-finish.png"
                   alt="Hilliard Sports Complex race venue"
                   fill
                   className="object-cover"
-                />
+                /> */}
+                 <video
+  className="absolute inset-0 h-full w-full object-contain p-0"
+  autoPlay
+  muted
+  loop
+  playsInline
+>
+  <source
+    src="/new-image/Hilliard 5K - Family Fun Run Animation (1) (1).mp4"
+    type="video/mp4"
+  />
+  Your browser does not support the video tag.
+</video>
               </div>
             </div>
           </div>
@@ -338,7 +364,7 @@ export default function Home() {
         <section id="register" className="mt-4 bg-[#1d232b] px-4 py-10 sm:px-8 sm:py-14">
           <div className="container mx-auto text-center">
             <p className="text-xs font-black uppercase tracking-[0.22em] text-white/60">
-              Prices increase August 1st — secure your spot today
+              Prices increase September 1st — secure your spot today
             </p>
             <h2 className="mt-3 text-3xl font-black uppercase leading-none text-[#f3d27d] sm:text-5xl">
               Ready To Run?

@@ -17,12 +17,12 @@ const swagItems = [
   },
   {
     title: "Custom Finisher Medal",
-    body: "Push through the finish line and you&apos;ll earn a custom medal with ribbon — crafted specifically for the Hilliard Family Fun Run. Whether it was your first race or your fifteenth, you earned it.",
+    body: "Push through the finish line and you'll earn a custom medal with ribbon — crafted specifically for the Hilliard Family Fun Run. Whether it was your first race or your fifteenth, you earned it.",
     image: "/new-image/race-medal-handoff.png",
   },
   {
     title: "Finish Line Food & Drinks",
-    body: "You just ran a race — now it&apos;s time to celebrate. Food and beverages are waiting for every finisher at the line. Enjoy the moment, refuel, and share it with the people who cheered you on.",
+    body: "You just ran a race — now it's time to celebrate. Food and beverages are waiting for every finisher at the line. Enjoy the moment, refuel, and share it with the people who cheered you on.",
     image: "/new-image/race-finish-tent.png",
   },
 ];
