@@ -16,7 +16,6 @@ export default function SiteFooter() {
     <footer className="mt-0 border-t border-white/10 bg-[#2a3138] px-3 pb-0 md:px-0">
       <div className="container mx-auto py-8">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-12 sm:gap-12">
-
           <div className="col-span-1 flex flex-col gap-0 sm:col-span-4">
             <div className="relative aspect-video overflow-hidden rounded-md bg-[#1a2027]">
               <video

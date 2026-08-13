@@ -18,12 +18,12 @@ const swagItems = [
   {
     title: "Custom Finisher Medal",
     body: "Push through the finish line and you'll earn a custom medal with ribbon — crafted specifically for the Hilliard Family Fun Run. Whether it was your first race or your fifteenth, you earned it.",
-    image: "/new-image/race-medal-handoff.png",
+    image: "/madel.jpg",
   },
   {
     title: "Finish Line Food & Drinks",
     body: "You just ran a race — now it's time to celebrate. Food and beverages are waiting for every finisher at the line. Enjoy the moment, refuel, and share it with the people who cheered you on.",
-    image: "/new-image/race-finish-tent.png",
+    image: "/new-image/race-coastal-runners.png",
   },
 ];
 
@@ -44,20 +44,20 @@ export default function SwagPage() {
           {swagItems.map((item) => (
             <article
               key={item.title}
-              className="overflow-hidden rounded-2xl border border-white/15 bg-white/5 shadow-[0_14px_30px_rgba(0,0,0,0.20)]"
+              className="overflow-hidden rounded-2xl border border-white/15 bg-white shadow-[0_14px_30px_rgba(0,0,0,0.20)]"
             >
-              <div className="relative w-full border-b border-white/10 bg-black/20 min-h-96 md:min-h-190">
+              <div className="relative w-full border-b border-white/10 bg-black min-h-56 md:min-h-96">
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
-                  className="object-contain md:object-cover opacity-80"
+                  className="object-contain md:object-contain opacity-80"
                   sizes="(min-width: 768px) 33vw, 100vw"
                 />
               </div>
               <div className="p-5">
-                <h2 className="text-2xl font-black uppercase tracking-tight text-white">{item.title}</h2>
-                <p className="mt-3 text-base leading-7 text-white/85 sm:text-lg sm:leading-8">{item.body}</p>
+                <h2 className="text-2xl font-black uppercase tracking-tight text-black">{item.title}</h2>
+                <p className="mt-3 text-base leading-7 text-black sm:text-lg sm:leading-8">{item.body}</p>
               </div>
             </article>
           ))}
