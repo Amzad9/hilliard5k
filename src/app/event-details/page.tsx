@@ -122,7 +122,7 @@ export default function EventDetailsPage() {
               <p className="flex items-center gap-2 text-sm font-black uppercase tracking-wider text-white/85">
                 <Trophy className="h-4 w-4" /> Entry Fee
               </p>
-              <p className="mt-2 text-lg text-white">5K entry is $45 and the 1-Mile Fun Run is $40; Prices increase September 1st.</p>
+              <p className="mt-2 text-lg text-white">5K — $50/ 1-Mile Fun Run — $45. Prices increase October 1st.</p>
             </div>
           </div>
 

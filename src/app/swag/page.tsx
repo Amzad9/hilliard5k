@@ -14,16 +14,19 @@ const swagItems = [
     title: "Custom Race Shirt",
     body: "Every registered participant receives an event shirt with the Hilliard Family Fun Run logo. Supplies are limited, so registering early is the smartest move.",
     image: "/Hilliard 5K - Long Sleeve Shirt.jpg",
+    isVideo: false,
   },
   {
     title: "Custom Finisher Medal",
     body: "Push through the finish line and you'll earn a custom medal with ribbon — crafted specifically for the Hilliard Family Fun Run. Whether it was your first race or your fifteenth, you earned it.",
-    image: "/madel.jpg",
+    image: "/new-image/H5K.jpg",
+    isVideo: false,
   },
   {
     title: "Finish Line Food & Drinks",
     body: "You just ran a race — now it's time to celebrate. Food and beverages are waiting for every finisher at the line. Enjoy the moment, refuel, and share it with the people who cheered you on.",
-    image: "/new-image/race-coastal-runners.png",
+    image: "/new-image/Hilliard 5K - Family Fun Run Animation (1) (1).mp4",
+    isVideo: true,
   },
 ];
 
@@ -46,14 +49,25 @@ export default function SwagPage() {
               key={item.title}
               className="overflow-hidden rounded-2xl border border-white/15 bg-white shadow-[0_14px_30px_rgba(0,0,0,0.20)]"
             >
-              <div className="relative w-full border-b border-white/10 bg-black min-h-56 md:min-h-96">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-contain md:object-contain opacity-80"
-                  sizes="(min-width: 768px) 33vw, 100vw"
-                />
+              <div className="relative w-full border-b border-white/10 bg-black/40 min-h-56 md:min-h-76 flex justify-center items-center">
+                {item.isVideo ? (
+                  <video
+                    src={item.image}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="h-full w-full object-contain md:object-contain opacity-80"
+                  />
+                ) : (
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-contain md:object-contain opacity-80"
+                    sizes="(min-width: 768px) 33vw, 100vw"
+                  />
+                )}
               </div>
               <div className="p-5">
                 <h2 className="text-2xl font-black uppercase tracking-tight text-black">{item.title}</h2>

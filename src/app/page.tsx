@@ -42,13 +42,19 @@ export default function Home() {
 
               <div className="relative overflow-hidden rounded-3xl">
                 <div className="relative mt-5 aspect-video w-full overflow-hidden  rounded-3xl border border-white/15 bg-[#1e252d]">
-                  <Image
-                    src="/new-image/race-finisher-portrait.png"
-                    alt="Hilliard Family Fun Run participants at the starting line"
-                    fill
-                    className="object-cover"
-                    priority
-                  />
+                <video
+  className="absolute inset-0 h-full w-full object-contain p-0"
+  autoPlay
+  muted
+  loop
+  playsInline
+>
+  <source
+    src="/new-image/Hilliard 5K - Family Fun Run Animation (1) (1).mp4"
+    type="video/mp4"
+  />
+  Your browser does not support the video tag.
+</video>
                  
                 </div>
               </div>
@@ -243,8 +249,8 @@ export default function Home() {
               </h2>
               <ul className="mt-5 space-y-4 text-xl leading-tight text-white/95 sm:text-xl">
                 <li>
-                  <span className="font-semibold">Entry Fee:</span> 5K — $45 &nbsp;|&nbsp; 1-Mile Fun Run — $40.
-                  Prices increase September 1st — register early to lock in the lower rate.
+                  <span className="font-semibold">Entry Fee:</span> 5K — $50/ 1-Mile Fun Run — $45.
+                  Prices increase October 1st. register early to lock in the lower rate.
                 </li>
                 <li>
                   <span className="font-semibold">Race morning schedule:</span> 5K starts at 9:00 AM,
@@ -364,14 +370,14 @@ export default function Home() {
         <section id="register" className="mt-4 bg-[#1d232b] px-4 py-10 sm:px-8 sm:py-14">
           <div className="container mx-auto text-center">
             <p className="text-xs font-black uppercase tracking-[0.22em] text-white/60">
-              Prices increase September 1st — secure your spot today
+              Prices increase October 1st — secure your spot today
             </p>
             <h2 className="mt-3 text-3xl font-black uppercase leading-none text-[#f3d27d] sm:text-5xl">
               Ready To Run?
             </h2>
             <p className="mt-4 mx-auto max-w-2xl text-lg leading-8 text-white/90 sm:text-xl">
               Join hundreds of Central Ohio runners and walkers at the 2026 Hilliard Family Fun Run.
-              5K — $45 &nbsp;|&nbsp; 1-Mile Fun Run — $40.
+              5K — $50 &nbsp;|&nbsp; 1-Mile Fun Run — $45.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link

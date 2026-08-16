@@ -16,7 +16,7 @@ const distances = [
     title: "5K Run & Walk",
     distance: "3.1 Miles",
     startTime: "9:00 AM",
-    price: "$45",
+    price: "$50",
     body: "The signature event for runners and walkers who want a steady race-day challenge on paved trails.",
     features: [
       "Chip-timed finish",
@@ -30,7 +30,7 @@ const distances = [
     title: "1-Mile Family Fun Run",
     distance: "1 Mile",
     startTime: "Approx. 9:10 AM",
-    price: "$40",
+    price: "$45",
     body: "A more relaxed one-mile route for families, walkers, strollers, seniors, and first-time participants.",
     features: [
       "Non-competitive, casual pace",
@@ -160,10 +160,10 @@ export default function RaceEventsPage() {
               </p>
               <div className="mt-4 space-y-4 text-base leading-7 text-white/90">
                 <p>
-                  <span className="font-black text-white">5K entry fee:</span> $45 (price increases August 1st)
+                  <span className="font-black text-white">5K entry fee:</span> $50 (price increases October 1st)
                 </p>
                 <p>
-                  <span className="font-black text-white">1-Mile Fun Run:</span> $40 (price increases August 1st)
+                  <span className="font-black text-white">1-Mile Fun Run:</span> $45 (price increases October 1st)
                 </p>
                 <p>
                   <span className="font-black text-white">Start times:</span> 5K at 9:00 AM · Fun Run approx. 9:10 AM

@@ -21,7 +21,7 @@ const faq = [
   },
   {
     question: "What are the entry fees?",
-    answer: "Entry is $45 for the 5K and $40 for the 1-Mile Fun Run. Rates increase after August 1st, so early registration is the best value.",
+    answer: "Entry Fee 5K — $50/ 1-Mile Fun Run — $45. Rates increase after October 1st, so early registration is the best value.",
   },
   {
     question: "Who can participate in the 1-Mile Fun Run?",
