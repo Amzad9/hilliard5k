@@ -6,11 +6,14 @@ import SiteHeader from "./SiteHeader";
 
 type PageShellProps = {
   activeLabel?: string;
+  imageClassName?: string;
   hero?: {
     eyebrow?: string;
     title: ReactNode;
     subtitle?: ReactNode;
     imageUrl?: string;
+    imageClassName?: string;
+    imageFit?: "cover" | "contain" | "fill";
     /** Shown on the right side of the hero (not used as background). */
     logoUrl?: string;
     logoAlt?: string;
@@ -20,7 +23,9 @@ type PageShellProps = {
   children: ReactNode;
 };
 
-export default function PageShell({ activeLabel, hero, children }: PageShellProps) {
+export default function PageShell({ activeLabel, imageClassName, hero, children }: PageShellProps) {
+  const containerClass = imageClassName ?? hero?.imageClassName;
+
   return (
     <main className="min-h-screen bg-[#000000] text-[#f1f4f6]">
       <div className="pb-0">
@@ -29,16 +34,11 @@ export default function PageShell({ activeLabel, hero, children }: PageShellProp
         {hero ? (
           <section
             className={[
-              "relative overflow-hidden px-4 pb-12 pt-18 sm:px-8 sm:pb-16 sm:pt-44 mt-12",
-              hero.videoUrl ? "bg-[#000000]" : hero.imageUrl ? "bg-cover bg-center" : "bg-[#000000]",
-            ].join(" ")}
-            style={
-              hero.videoUrl
-                ? undefined
-                : hero.imageUrl
-                  ? { backgroundImage: `url('${hero.imageUrl}')` }
-                  : undefined
-            }
+              "relative overflow-hidden px-4 pb-8 pt-16 sm:px-8 sm:pb-10 sm:pt-28 mt-12 bg-[#000000]",
+              containerClass,
+            ]
+              .filter(Boolean)
+              .join(" ")}
           >
             {hero.videoUrl ? (
               <video
@@ -52,6 +52,21 @@ export default function PageShell({ activeLabel, hero, children }: PageShellProp
               >
                 <source src={hero.videoUrl} type="video/mp4" />
               </video>
+            ) : hero.imageUrl ? (
+              <Image
+                src={hero.imageUrl}
+                alt=""
+                fill
+                priority
+                className={[
+                  "pointer-events-none absolute inset-0 z-0 h-full w-full",
+                  hero.imageFit === "contain"
+                    ? "object-contain"
+                    : hero.imageFit === "fill"
+                      ? "object-fill"
+                      : "object-cover object-center",
+                ].join(" ")}
+              />
             ) : null}
             <div className="absolute inset-0 z-1 bg-linear-to-r from-[#171b22]/60 via-[#1c232b]/70 to-[#1c232b]/20" />
 

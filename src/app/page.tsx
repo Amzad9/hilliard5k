@@ -172,7 +172,7 @@ export default function Home() {
                     And fresh finish line food and beverages will be waiting the moment you cross.
                   </p>
                   <p className="mt-4 max-w-5xl text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
-  Enjoy a professionally organised race experience with clearly marked routes, on-course hydration stations, enthusiastic volunteers, and accurate chip timing to help you perform your best.
+  Enjoy a professionally organized race experience with clearly marked routes, on-course hydration stations, enthusiastic volunteers, and accurate chip timing to help you perform your best.
 </p>
 
 <p className="mt-4 max-w-5xl text-base leading-7 text-white/90 sm:text-lg sm:leading-8">

@@ -61,7 +61,8 @@ export default function QuestionsPage() {
         eyebrow: "Questions",
         title: "We\u2019re Happy To Help",
         subtitle: "Browse the most common questions below, or reach out by phone or email if you need a quick answer before race day.",
-        imageUrl: "/new-image/race-cheer-signs.png",
+        imageUrl: "/new-image/questions-info-booth.png",
+        imageClassName: "h-[600px]",
       }}
     >
       {/* Contact methods */}

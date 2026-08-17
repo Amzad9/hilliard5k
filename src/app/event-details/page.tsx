@@ -58,7 +58,8 @@ export default function EventDetailsPage() {
         eyebrow: "Event Details",
         title: "Pick Your Distance",
         subtitle: "Two courses make it easy to choose the kind of race morning you want — fast and focused, or relaxed and family-friendly.",
-        imageUrl: "/new-image/race-park-crowd.png",
+        imageUrl: "/new-image/event-details-hero.png",
+        imageClassName: "h-[600px]",
       }}
     >
       {/* Distance cards */}

@@ -38,7 +38,8 @@ export default function SwagPage() {
         eyebrow: "Race Day Swag",
         title: "Train For It. Earn It. Wear It.",
         subtitle: "Every participant gets a race shirt, every finisher earns a medal, and the finish line will have refreshments waiting for you.",
-        imageUrl: "/new-image/race-finish-ribbon.png",
+        imageUrl: "/new-image/swag-hero.png",
+        imageClassName: "h-[600px]"
       }}
     >
       {/* Swag Cards */}

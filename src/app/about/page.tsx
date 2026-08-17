@@ -44,6 +44,7 @@ export default function AboutPage() {
         subtitle:
           "The Hilliard Family Fun Run brings Central Ohio runners, walkers, families, seniors, and first-timers together for a morning that feels energetic, welcoming, and community-minded.",
         imageUrl: "/new-image/autumn-group-run.png",
+        imageClassName: "h-[600px]"
       }}
     >
       {/* Mission */}
@@ -81,7 +82,7 @@ export default function AboutPage() {
           <div className="lg:col-span-5">
             <div className="relative min-h-[280px] overflow-hidden rounded-3xl border border-white/15 bg-white/5 shadow-[0_18px_44px_rgba(0,0,0,0.30)] sm:min-h-[360px]">
               <Image
-                src="/new-image/race-start-crowd.png"
+                src="/new-image/race-start-crowd-generic.png"
                 alt="Hilliard Family Fun Run — race morning energy"
                 fill
                 className="object-cover"
@@ -190,7 +191,7 @@ export default function AboutPage() {
             <div className="lg:col-span-7">
               <div className="relative h-full min-h-[220px] overflow-hidden rounded-[24px] border border-white/15 bg-black/40 shadow-[0_18px_44px_rgba(0,0,0,0.25)] sm:min-h-[280px] lg:min-h-0">
                 <Image
-                  src="/new-image/race-team-group.png"
+                  src="/new-image/race-team-group-generic.png"
                   alt="Hilliard Family Fun Run participants"
                   fill
                   className="object-cover"

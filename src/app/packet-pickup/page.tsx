@@ -38,7 +38,8 @@ export default function PacketPickupPage() {
         eyebrow: "Packet Pickup",
         title: "Get Your Bib. Get Ready.",
         subtitle: "Advance packet pickup is available before race day. Race-morning pickup is also available — but arriving early is the best strategy.",
-        imageUrl: "/new-image/race-medal-handoff.png",
+        imageUrl: "/new-image/packet-pickup-hero.png",
+        imageClassName: "h-[600px]"
       }}
     >
       {/* Pickup info + quick notes */}
