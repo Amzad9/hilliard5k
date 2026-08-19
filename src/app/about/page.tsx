@@ -82,7 +82,7 @@ export default function AboutPage() {
           <div className="lg:col-span-5">
             <div className="relative min-h-[280px] overflow-hidden rounded-3xl border border-white/15 bg-white/5 shadow-[0_18px_44px_rgba(0,0,0,0.30)] sm:min-h-[360px]">
               <Image
-                src="/new-image/race-start-crowd-generic.png"
+                src="/Pic101.jpg"
                 alt="Hilliard Family Fun Run — race morning energy"
                 fill
                 className="object-cover"

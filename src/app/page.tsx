@@ -19,12 +19,12 @@ export default function Home() {
             <div className="relative z-10 grid gap-6 lg:grid-cols-2 lg:items-center">
               <div className="max-w-7xl">
                 <h1 className="text-4xl md:text-4xl font-black uppercase leading-[0.92] text-[#00a2e7]">
-                HILLIARD 5K AND FUN RUN.
+                  HILLIARD 5K AND FUN RUN.
                 </h1>
                 <p className="mt-3 text-2xl font-semibold text-[#f3d27d] sm:text-4xl">
-                November 1st, 9am (Hilliard Ohio)
+                  November 1st, 9am (Hilliard Ohio)
                 </p>
-              
+
                 <p className="mt-5 max-w-4xl text-lg leading-9 text-white/95 sm:text-2xl sm:leading-[1.3]">
                   Central Ohio runners, walkers, families, seniors, and first-time participants are all welcome. Come for the movement, the atmosphere, and the chance to support a local cause.
                 </p>
@@ -42,20 +42,20 @@ export default function Home() {
 
               <div className="relative overflow-hidden rounded-3xl">
                 <div className="relative mt-5 aspect-video w-full overflow-hidden  rounded-3xl border border-white/15 bg-[#1e252d]">
-                <video
-  className="absolute inset-0 h-full w-full object-contain p-0"
-  autoPlay
-  muted
-  loop
-  playsInline
->
-  <source
-    src="/new-image/Hilliard 5K - Family Fun Run Animation (1) (1).mp4"
-    type="video/mp4"
-  />
-  Your browser does not support the video tag.
-</video>
-                 
+                  <video
+                    className="absolute inset-0 h-full w-full object-contain p-0"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  >
+                    <source
+                      src="/new-image/Hilliard 5K - Family Fun Run Animation (1) (1).mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+
                 </div>
               </div>
             </div>
@@ -172,41 +172,55 @@ export default function Home() {
                     And fresh finish line food and beverages will be waiting the moment you cross.
                   </p>
                   <p className="mt-4 max-w-5xl text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
-  Enjoy a professionally organized race experience with clearly marked routes, on-course hydration stations, enthusiastic volunteers, and accurate chip timing to help you perform your best.
-</p>
+                    Enjoy a professionally organized race experience with clearly marked routes, on-course hydration stations, enthusiastic volunteers, and accurate chip timing to help you perform your best.
+                  </p>
 
-<p className="mt-4 max-w-5xl text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
-  Whether you're aiming for a personal best, running alongside friends, or taking on your very first marathon, you'll be part of an inspiring community that celebrates every runner from the starting line to the finish.
-</p>
+                  <p className="mt-4 max-w-5xl text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
+                    Whether you&apos;re aiming for a personal best, running alongside friends, or taking on your very first marathon, you&apos;ll be part of an inspiring community that celebrates every runner from the starting line to the finish.
+                  </p>
                 </div>
 
-                <div className="relative overflow-hidden rounded-3xl  bg-[#1e252d] shadow-[0_18px_44px_rgba(0,0,0,0.25)]">
+                <div className="relative overflow-hidden rounded-3xl bg-[#1e252d] shadow-[0_18px_44px_rgba(0,0,0,0.25)] border border-white/10">
                   <div className="relative aspect-18/10 w-full">
-                    {/* <Image
-                      src="/new-image/race-finish-ribbon.png"
+                    <Image
+                      src="/pic200.jpg"
                       alt="Runners celebrating at the finish line"
                       fill
                       className="object-cover"
-                    /> */}
-                     <video
-  className="absolute inset-0 h-full w-full object-contain p-0"
-  autoPlay
-  muted
-  loop
-  playsInline
->
-  <source
-    src="/new-image/Hilliard 5K - Family Fun Run Animation (1) (1).mp4"
-    type="video/mp4"
-  />
-  Your browser does not support the video tag.
-</video>
+                    />
+                    <div className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-black/40 px-3 py-2 backdrop-blur">
+                      <span className="h-2 w-2 rounded-full bg-[#f3d27d]" aria-hidden />
+                      <span className="text-xs font-black uppercase tracking-[0.12em] text-[#f0d07a]">
+                        Finisher Perks
+                      </span>
+                    </div>
                   </div>
-                  <div className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-black/40 px-3 py-2 backdrop-blur">
-                    <span className="h-2 w-2 rounded-full bg-[#f3d27d]" aria-hidden />
-                    <span className="text-xs font-black uppercase tracking-[0.12em] text-[#f0d07a]">
-                      Finisher Perks
-                    </span>
+
+                  {/* Shirt & Medal images side by side below the main image */}
+                  <div className="grid grid-cols-2 gap-3 p-3 bg-[#161c23]">
+                    <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 bg-black/30">
+                      <Image
+                        src="/Hilliard 5K - Long Sleeve Shirt.jpg"
+                        alt="Official Hilliard 5K Race Shirt"
+                        fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <div className="absolute bottom-2 left-2 rounded-lg border border-white/15 bg-black/65 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur">
+                        Race Shirt
+                      </div>
+                    </div>
+
+                    <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 bg-black/30">
+                      <Image
+                        src="/new-image/H5K.jpg"
+                        alt="Official Hilliard 5K Finisher Medal"
+                        fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <div className="absolute bottom-2 left-2 rounded-lg border border-white/15 bg-black/65 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur">
+                        Finisher Medal
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -270,25 +284,13 @@ export default function Home() {
             </div>
             <div className="relative overflow-hidden rounded-3xl border border-white/15 bg-[#1e252d] shadow-[0_18px_44px_rgba(0,0,0,0.25)]">
               <div className="relative aspect-video w-full overflow-hidden rounded-3xl">
-                {/* <Image
-                  src="/new-image/race-crowd-finish.png"
+                <Image
+                  src="/pic201.jpg"
                   alt="Hilliard Sports Complex race venue"
                   fill
                   className="object-cover"
-                /> */}
-                 <video
-  className="absolute inset-0 h-full w-full object-contain p-0"
-  autoPlay
-  muted
-  loop
-  playsInline
->
-  <source
-    src="/new-image/Hilliard 5K - Family Fun Run Animation (1) (1).mp4"
-    type="video/mp4"
-  />
-  Your browser does not support the video tag.
-</video>
+                />
+
               </div>
             </div>
           </div>
@@ -298,31 +300,31 @@ export default function Home() {
         <section id="about-race" className="mt-0 bg-[#1e252d] px-4 py-6 sm:px-8 sm:py-12">
           <div className="container mx-auto grid gap-6 lg:grid-cols-[0.5fr_1fr]">
             <div className="relative min-h-[250px] overflow-hidden rounded-3xl ">
-            <video
-  className="absolute inset-0 h-full w-full object-contain p-0"
-  autoPlay
-  muted
-  loop
-  playsInline
->
-  <source
-    src="/new-image/Hilliard 5K - Family Fun Run Animation (1) (1).mp4"
-    type="video/mp4"
-  />
-  Your browser does not support the video tag.
-</video>
+              <video
+                className="absolute inset-0 h-full w-full object-contain p-0"
+                autoPlay
+                muted
+                loop
+                playsInline
+              >
+                <source
+                  src="/new-image/Hilliard 5K - Family Fun Run Animation (1) (1).mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <div>
               <h3 className="md:text-4xl font-black uppercase leading-none text-[#f3d27d] text-2xl">
                 Why People Love This Race
               </h3>
               <p className="mt-4 max-w-6xl text-xl leading-8 text-white/95 sm:text-xl sm:leading-[1.3]">
-              Welcome to the first annual Hilliard 5K and Family Fun Run. We hope to start a local tradition that brings Central Ohio residents together year after year.
+                Welcome to the first annual Hilliard 5K and Family Fun Run. We hope to start a local tradition that brings Central Ohio residents together year after year.
               </p>
               <p className="mt-3 max-w-6xl text-xl leading-8 text-white/95 sm:text-xl sm:leading-[1.3]">
-              Designed for both competitive runners as well as the more casual runner or walker looking for a fun and friendly venue. Our Family Fun Run (or walk) is the perfect distance for those who enjoy the outdoors, clean air, meeting new people and lacing up the sneakers. Seniors…………..this is for you!
+                Designed for both competitive runners as well as the more casual runner or walker looking for a fun and friendly venue. Our Family Fun Run (or walk) is the perfect distance for those who enjoy the outdoors, clean air, meeting new people and lacing up the sneakers. Seniors…………..this is for you!
               </p>
-             
+
               <div className="mt-6">
                 <Link
                   href="https://www.ultrafit-usa.com/hilliard5k"
